@@ -1,0 +1,39 @@
+{% extends "template/layout/basetemplate.phtml" %}
+{% block maincontent %}
+    <div class="standard-form-wrapper">
+        <!-- Start Form wrapper -->
+        <form method="post" action="{{ processForm }}" name="{{ formName }}" onsubmit="return validateLoginForm()">
+
+            <input type="hidden" name="csrf_token" value="{{ csrftoken }}" >
+
+            <div class="form_fields_wrapper">
+                <label class="input-field-label-font">Email:</label>
+                <input type="text" name="regMem_E1" id="regMem_E1"
+                       class="input-form-fields" title="Email" >
+                <!--div id="gif-div">hi</div-->
+            </div>
+
+
+            <div class="form_fields_wrapper">
+                <label class="input-field-label-font">Password:</label>
+                <input type="password" name="regMem_Pw" id="regMem_Pw"
+                       class="input-form-fields" title="Password" >
+            </div><br>
+
+            <div class="form_fields_wrapper">
+                <label class="input-field-label-font" for="regRemember">
+                    <input type="checkbox" name="regRemember" id="regRemember">Remember Me
+                </label>
+            </div>
+
+            <div class="submit-button-div">
+                <input type="submit" name="{{ submitbutton }}" value="SUBMIT"  >
+            </div>
+        </form><br>
+
+        <div class="">
+            <a href="{{ forgotpassword }}">Forgot Password?</a>
+        </div>
+    </div>
+<div class="form-content-left-div"> {{ pageContent }} </div>
+{% endblock %}

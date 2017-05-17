@@ -1,0 +1,27 @@
+{% extends "template/layout/basetemplate.phtml" %}
+{% block maincontent %}
+    <div class="standard-form-wrapper">
+        <!-- Start Form wrapper -->
+        <form method="post" action="{{ processForm }}" name="{{ formName }}">
+
+            <input type="hidden" name="csrf_token" value="{{ csrftoken }}" >
+
+            <div class="form_fields_wrapper">
+                <label class="input-field-label-font">Name:</label>
+                <input type="text" name="memName"
+                       class="input-form-fields" title="Name" >
+            </div>
+
+            <div class="form_fields_wrapper">
+                <label class="input-field-label-font">Email:</label>
+                <input type="text" name="memEmail"
+                       class="input-form-fields" title="Email" >
+            </div><br>
+
+            <div class="submit-button-div">
+                <input type="submit" value="Submit" name="{{ submitbutton }}" >
+            </div>
+        </form>
+    </div><!-- #end form wrapper -->
+<div class="form-content-left-div">{{ pageContent }}</div>
+{% endblock %}

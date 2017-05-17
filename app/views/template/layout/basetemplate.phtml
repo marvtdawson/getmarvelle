@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+{% include 'template/layout/pagehead.phtml' %}
+<body>
+   <div class="container-fluid page-content-wrapper">
+       <!-- START HEADER CONTAINER -->
+       <div class="row">
+           <div class="mast-head-wrapper" >
+               {% include 'template/layout/header.phtml' %}
+           </div>
+       </div>
+       <!-- #end Header wrapper -->
+
+       <!--Start Main Content Wrapper -->
+       <div class="row">
+           <div class="main-content-wrapper">
+               <div class="main-content">
+                   <h1> {{ pageTitle }} </h1>
+                    {% block maincontent %}
+                    {% endblock %}
+               </div>
+               {% include 'template/layout/banners/std_lowerpage_banner.phtml' %}
+           </div><!-- #end main content wrapper -->
+       </div>
+
+
+       <!-- Push the footer to bottom of page -->
+       <div class="row">
+            <div class="push_footer_down"></div>
+       </div>
+
+       <!-- START FOOTER CONTAINER -->
+       <div class="row">
+           <div class="footer-wrapper">
+                {% include 'template/layout/footer.phtml' %}
+           </div>
+       </div><!-- #end Footer wrapper -->
+
+   </div>
+
+</body>
+</html>

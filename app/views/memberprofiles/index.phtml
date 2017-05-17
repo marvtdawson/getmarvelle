@@ -1,0 +1,42 @@
+{% extends "template/layout/membersprofiletemplate.phtml" %}
+{% block cpanelcontent  %}
+<div id="cPanPages">
+    <h1> {{ pageTitle }}  </h1 >
+    <!--div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div-->
+    <hr>
+    <div class="row">
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ artistMusic }}">
+                <i class="fa fa-music fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ artistMusic }}">MUSIC</a>
+            </div>
+        </div>
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ hipHopNews }}">
+                <i class="fa fa-hacker-news fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ hipHopNews }}">HIP HOP NEWS</a>
+            </div>
+        </div>
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ blog }}">
+                <i class="fa fa-newspaper-o fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ blog }}">BLOG</a>
+            </div>
+        </div>
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ vlog }}">
+                <i class="fa fa-file-video-o fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ vlog }}">VLOG</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

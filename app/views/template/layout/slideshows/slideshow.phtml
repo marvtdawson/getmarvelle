@@ -1,0 +1,110 @@
+{% block jumbotron %}
+    <!--img src="/assets/images/slideshow/Free-Hip-Hop-Wallpaper.jpg" class="homeSlide_imgs" title=""-->
+    <!--video autoplay>
+        <source  type="video/mp4" src="/assets/media/video/vlogcast/Unit_Page_Creation_Tutorial.mp4">
+    </video-->
+
+    <div id="s5" class="homeSlide">
+        <img class="homeSlide_imgs" alt="{{ siteName }}"
+             src="assets/images/slideshow/Free-Hip-Hop-Wallpaper.jpg" />
+        <img class="homeSlide_imgs" alt="{{ siteName }}"
+             src="assets/images/slideshow/marvintdawson_background.png" />
+        <img class="homeSlide_imgs" alt="{{ siteName }}"
+             src="assets/images/slideshow/logo_url_black_bkground_2500_x_1152.png" />
+    </div>
+<div class="index-register-form-wrapper">
+    <form method="post" action="{{ processform }}" name="{{ formName }}">
+
+        <input type="hidden" name="csrf_token" value="{{ csrftoken }}" >
+
+        <div class="form_fields_wrapper">
+            <label class="input-field-label-font">
+                Member Type:
+            </label>
+            <select name="regMemberType" id="regMemberType" autofocus
+                    class="input-form-fields" >
+                <option value="NULL"> -- Please Select --</option>
+                <option value="ARP">AR Rep</option>
+                <option value="ART">Artist</option>
+                <option value="CGR">Choreographer</option>
+                <option value="DCR">Dancer</option>
+                <option value="DEJ">DeeJay</option>
+                <option value="FAN">Fan</option>
+                <option value="LAB">Label</option>
+                <option value="MOD">Model</option>
+                <option value="NWS">News</option>
+                <option value="PRD">Producer</option>
+                <option value="PGR">Photographer</option>
+                <option value="VGR">Videographer</option>
+            </select>
+        </div>
+
+        <!-- index page registration form -->
+        <div class="form_fields_wrapper">
+            <label class="input-field-label-font">
+                Artist Name:
+            </label>
+            <input name="regAname" type="text"
+                   class="index-form-fields-wrapper"
+                   placeholder=" Artist Name"
+                   value="" maxlength="25">
+        </div>
+
+        <div class="form_fields_wrapper">
+            <label class="input-field-label-font">
+                Name:
+            </label>
+            <input name="regName" type="text"
+                   class="index-form-fields-wrapper"
+                   placeholder=" Name"
+                   value="" maxlength="35">
+        </div>
+
+        <div class="form_fields_wrapper">
+            <label class="input-field-label-font">
+                Email:
+            </label>
+            <input name="regEmail_1" type="text"
+                   class="index-form-fields-wrapper"
+                   placeholder=" Email"
+                   value="" maxlength="35">
+        </div>
+
+        <div class="form_fields_wrapper">
+            <label class="input-field-label-font">
+                Re-Email:
+            </label>
+            <input name="regEmail_2" type="text"
+                   class="index-form-fields-wrapper"
+                   placeholder=" Re-Email"
+                   value="" maxlength="35">
+        </div>
+
+        <div class="form_fields_wrapper">
+            <label class="input-field-label-font">
+                Password:
+            </label>
+            <input name="regPw" type="password"
+                   class="index-form-fields-wrapper"
+                   placeholder=" Password"
+                   maxlength="35">
+        </div>
+
+        <div class="form_fields_terms_wrapper">
+            <label class="input-field-label-font">
+                Agree To Terms:
+            </label>
+            <input name="regTerms" id="regTerms" type="checkbox"
+                   class="reg-input-form-field"
+                   value="Yes" checked>
+        </div>
+        <div class="regTandC_text">
+            By registering you agree to our
+            <a href="/terms/index" target="_blank">Terms and Conditions</a>
+        </div>
+        <div class="reg-submit-button">
+            <input name="{{ submitbutton }}" type="submit" value="SUBMIT" onsubmit="return validateRegForm(this)">
+        </div>
+    </form>
+</div>
+{% endblock %}

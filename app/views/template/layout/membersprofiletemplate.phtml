@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+{% include '/template/layout/pagehead.phtml' %}
+<body>
+    <div class="container-fluid">
+        <!-- start header -->
+        <div class="row">
+            <div class="mast-head-wrapper">
+                {% include 'template/layout/header.phtml' %}
+            </div>
+        </div>
+        <!-- start cpanel page wrapper -->
+        <div class="row">
+            <div class="cpanel-page-wrapper">
+                <!-- start cpanel left menu -->
+                <div id="cpanel-menu">
+                    {% include '/template/layout/cpanelleftmenu.phtml' %}
+                </div>
+                <!--start cpanel main content -->
+                <div class="cpanel-content-wrapper">
+                    <div class="cpanel-ad-column">
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <!-- cpanel_left_colum_ad -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-3000506446152743"
+                             data-ad-slot="6198654844"
+                             data-ad-format="auto"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+
+                    </div>
+                    <div class="cpanFormWrapper">
+                        <section>
+                            {% block cpanelcontent %}
+                            {% endblock %}
+                            <!--start cPanel ad banner -->
+                            <div class="cpanel-ad-banner">
+                                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                <!-- cpanel-ad-banner -->
+                                <ins class="adsbygoogle"
+                                     style="display:block"
+                                     data-ad-client="ca-pub-3000506446152743"
+                                     data-ad-slot="4361994840"
+                                     data-ad-format="auto"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- push / clear footer -->
+        <div class="row push_footer_down"></div>
+
+        <!-- start footer -->
+        <div class="row">
+            <div class="col-lg footer-wrapper">
+                {% include 'template/layout/footer.phtml' %}
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

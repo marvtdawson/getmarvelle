@@ -1,0 +1,42 @@
+<div class="mast-head">
+    <div class="col-xs-12 col-sm-6 col-md-8 logo-wrapper">
+        <a href="/">
+            <img class="logo" src="../../assets/images/logo.jpg" alt="HGM Logo">
+        </a>
+        <div class="logo-text">
+            <a href="/">{{ siteName }}
+            </a>
+        </div>
+    </div>
+    <div class="nav-mobile-button"></div>
+    <!-- START Navigation Links -->
+    <div id="open-nav-login-form" class="overlay">
+
+    </div>
+    <div class="nav-link-wrapper">
+        <ul class="nav-ul">
+            <li class="nav-link">
+                <form method="post" action="/search/artist">
+                    <input type="search" id="nav-search" name="nav-search" class="input-form-fields" placeholder="  search">
+                    <button type="submit" id="nav-search-button" name="nav-search-button" class="nav-search-button" onclick="">
+                        <i class="fa fa-search fa-1x" aria-hidden="true" ></i>
+                    </button>
+                </form>
+            </li>
+            {% if userLogin == true %}
+                <li class="nav-link"><a href="/appcms/cpanel/index">MY PROFILE</a></li>
+            {% else %}
+                <li class="nav-link" id="nav-login-link"><a href="/login/index">LOGIN</a></li>
+            {% endif %}
+        </ul>
+    </div>
+
+</div><!-- #end mast head -->
+<div id="open-nav-login-form" title="LOG IN">
+<form action="/login/process" method="post" id="" name="">
+    <input type="text" id="regMem_E1" name="regMem_E1" title="" class="input-form-fields" placeholder=" Email"><br><br>
+    <input type="password" id="regMem_Pw" name="regMem_Pw" title="" class="input-form-fields" placeholder=" Password"><br><br>
+    <input type="hidden" name="csrf_token" value="{{ csrftoken }}" >
+    <input type="submit" id="" name="" value="ENTER" class="">
+</form>
+</div>

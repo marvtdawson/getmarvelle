@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+{% include 'template/layout/pagehead.phtml' %}
+<body>
+   <div class="container-fluid page-content-wrapper">
+       <div class="overlay" id="open-overlay">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+           <div class="overlay-form-wrapper">
+               <h4 class="overlay-form-h4-font">LOGIN</h4>
+               <form method="post" action="{{ processLoginForm }}" name="{{ formName }}" class="overlay-form">
+                   <input type="hidden" name="csrf_token" value="{{ csrftoken }}" >
+                   <div class="overlay_form_fields_wrapper">
+                       Email: <input type="text" name="regMem_E1" id="regMem_E1"
+                              class="overlay-input-form-fields" title="Email" >
+                       <!--div id="gif-div">hi</div-->
+                   </div>
+                   <div class="overlay_form_fields_wrapper">
+                       Password: <input type="password" name="regMem_Pw" id="regMem_Pw"
+                              class="overlay-input-form-fields" title="Password" >
+                   </div><br>
+                   <div class="overlay-submit-button">
+                       <input type="submit" name="{{ submitbutton }}" value="ENTER"  >
+                   </div>
+               </form><br>
+           </div>
+       </div>
+       <!-- START HEADER CONTAINER -->
+       <div class="row">
+           <div class="mast-head-wrapper" >
+               {% include 'template/layout/home_header.phtml' %}
+           </div>
+       </div>
+       <!-- #end Header wrapper -->
+
+       <!--Start Main Content Wrapper -->
+       <div class="row">
+           {% block maincontent %}
+           {% endblock %}
+       </div>
+
+       <!-- Push the footer to bottom of page -->
+       <div class="row">
+            <div class="push_footer_down"></div>
+       </div>
+
+       <!-- START FOOTER CONTAINER -->
+       <div class="row">
+           <div class="footer-wrapper">
+                {% include 'template/layout/footer.phtml' %}
+           </div>
+       </div><!-- #end Footer wrapper -->
+
+   </div>
+
+</body>
+</html>

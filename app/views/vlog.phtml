@@ -1,0 +1,78 @@
+{% extends "template/layout/basetemplate.phtml" %}
+{% block maincontent %}
+    <section class="vlog-globalroll">
+        <div class="vlog-videoWrapper">
+            <h2>"Video Goes Here! </h2>
+            <video class="video-container" controls>
+                <source src="../../../../assets/media/video/vlogcast/Does_Gorilla_Posting_Work.mp4" title="Microsoft Bug" type="video/mp4" class="video-container">
+            </video>
+        </div>
+        <!-- Start Vlog Author -->
+        <div class="vlog-infoWrapper">
+            <div class="vlog-site-hash">
+                <?php echo "#HomeGrownMusiq"; ?>
+            </div>
+            <div class="vlog-social-icons-wrapper">
+                <div class="vlog-social-icon">
+                    <a href="#">
+                        <i class="fa fa-snapchat fa-2x"></i>
+                    </a>
+                </div>
+                <div class="vlog-social-icon">
+                    <a href="#">
+                        <i class="fa fa-instagram fa-2x"></i>
+                    </a>
+                </div>
+                <div class="vlog-social-icon">
+                    <a href="#">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </a>
+                </div>
+                <div class="vlog-social-icon">
+                    <a href="#">
+                        <i class="fa fa-facebook fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div><!-- /end  -->
+        <article>
+            <!-- Start Vlog Title -->
+            <div class="vlog-titleWrapper">
+                <?php echo "Episode 1" ;?>
+            </div><!-- /end  -->
+            <!-- Start Vlog Article  -->
+            <div class="vlog-articleWrapper">
+                {{ pageContent }}
+            </div><!-- /end  -->
+        </article>
+    </section>
+    <section class="vlog-global-asidebar">
+        <div class="vlog-subscribeform-wrapper">
+            <div class="vlog-signup-form-wrapper">
+                <!-- Start Form wrapper -->
+                <form method="post" action="{{ processForm }}" name="{{ formName }}">
+
+                    <input type="hidden" name="csrf_token" value="{{ csrftoken }}" >
+
+                    <div class="form_fields_wrapper">
+                        <label class="input-field-label-font">Name:</label>
+                        <input type="text" name="memName"
+                               class="input-form-fields" title="Name" >
+                    </div>
+
+                    <div class="form_fields_wrapper">
+                        <label class="input-field-label-font">Email:</label>
+                        <input type="text" name="memEmail"
+                               class="input-form-fields" title="Email" >
+                    </div><br>
+
+                    <div class="submit-button-div">
+                        <input type="submit" value="Submit" name="{{ submitbutton }}" >
+                    </div>
+                </form>
+
+            </div><!-- #end form wrapper -->
+        </div>
+    </section>
+{% endblock %}

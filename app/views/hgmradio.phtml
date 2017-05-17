@@ -1,0 +1,45 @@
+{% extends "template/layout/radiotemplate.phtml" %}
+{% block hgmplayer %}
+<div class="player-wrapper">
+    <div class="player">
+        <div>{{ pageContent }}</div>
+        <div class="now-playing-wrapper">
+
+            <!-- -->
+            <div class="intro-timer"></div>
+
+            <!-- -->
+            <div class="playing-info"></div>
+
+            <!-- -->
+            <div class="remaining-timer"></div>
+
+        </div>
+        <div class="playlist-wrapper"><!-- playlist wrapper -->
+
+            <!-- -->
+            <div class=""></div>
+
+        </div>
+        <div class="control-board-wrapper"> <!-- control board wrapper -->
+
+            <!-- slide show wrapper -->
+            <div class="artist-slide-wrapper">
+
+            </div>
+
+            <!-- mixer wrapper -->
+            <div class="mixer-wrapper">
+                <!-- -->
+                <div class="mic-wrapper"></div>
+
+                <!-- -->
+                <div class="track-wrapper"></div>
+
+                <!-- -->
+                <div class="phonein-wrapper"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

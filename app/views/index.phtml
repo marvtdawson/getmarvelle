@@ -1,0 +1,13 @@
+{% extends "template/layout/homepagetemplate.phtml" %}
+{% block maincontent %}
+<div class="jumbotron-wrapper">
+    {% include 'template/layout/slideshows/slideshow.phtml' %}
+</div>
+<script type="text/javascript">
+    // jQuery Cycle Plugin - Slideshows
+    $('#s5').cycle({
+        fx:    'fade',
+        pause:  1
+    });
+</script>
+{% endblock %}

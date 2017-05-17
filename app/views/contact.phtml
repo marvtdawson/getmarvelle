@@ -1,0 +1,56 @@
+{% extends "template/layout/basetemplate.phtml" %}
+{% block maincontent %}
+        <div class="contact-form-wrapper">
+            <!-- Start Form wrapper -->
+            <form method="post" action="{{ processform }}" name="{{ formName }}">
+
+                <input type="hidden" name="csrf_token" value="{{ csrftoken }}" >
+
+                <div class="form_fields_wrapper">
+                    <label class="input-field-label-font">Name:</label>
+                    <input type="text" name="contact_Name"
+                           class="input-form-fields" title="Name" value="{{ userinput }}" >
+                </div>
+
+                <div class="form_fields_wrapper">
+                    <label class="input-field-label-font">State:</label>
+                    <select id="contact_State" name="contact_State"  class="input-form-fields">
+                        <option selected="selected">Choose your state:</option>
+                        {% for key, state in states %}
+                        <option value="{{ key }}"> {{ state }} </option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="form_fields_wrapper">
+                    <label class="input-field-label-font">City:</label>
+                    <input type="text" name="contact_City"
+                           class="input-form-fields" title="City" value="{{ userinput }}">
+                </div>
+
+                <div class="form_fields_wrapper">
+                    <label class="input-field-label-font">Email:</label>
+                    <input type="text" name="contact_Email"
+                           class="input-form-fields" title="Email" value="{{ userinput }}">
+                </div>
+
+                <div class="form_fields_wrapper">
+                    <input type="hidden" name="contact_Month"
+                           class="input-form-fields" title="Month" value="">
+                    <input type="hidden" name="contact_Day"
+                           class="input-form-fields" title="Day" value="">
+                    <input type="hidden" name="contact_Year"
+                           class="input-form-fields" title="Year" value="">
+                </div>
+                <div class="form_fields_wrapper">
+                    <label class="input-field-label-font">Message:</label>
+                    <textarea name="contact_Message" cols="40" rows="10"
+                              class="input-form-field-textarea" title="Comments"></textarea>
+                </div>
+                <div class="submit-button-div">
+                    <input type="submit" value="Submit" name="contact_Submit" id="contact_Submit">
+                </div>
+            </form>
+        </div><!-- #end form wrapper -->
+<div class="form-content-left-div">{{ pageContent }}</div>
+{% endblock %}
