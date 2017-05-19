@@ -1,0 +1,17 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent  %}
+<div id="cPanPages">
+    <h1>{{ pageTitle }}</h1>
+    <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+    <hr>
+    <div class="row">
+        <form action="{{ processForm }}" method="post" class="ajax" name="{{ formName }}" >
+            <div class="cpan-input-wrapper">
+                <label>View Track Stats: </label>
+                <input type="button" name="{{ submitButton }}" value="VIEW" class="cpan-forms-submit-button" />
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+

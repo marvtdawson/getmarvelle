@@ -1,0 +1,26 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent  %}
+<div id="cPanPages">
+    <h1>{{ pageTitle }}</h1>
+    <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+    <hr>
+    <div class="row">
+        <img src="../../assets/images/slideshow/thumb/marvin_the_martian.jpg">
+        {% if slideImages %}
+            <div class="gallery-item-wrapper">
+                    {% for slide in slideImages %}
+                        <div class="gallery-item">
+                            <a href="{{ slide['full'] }}"><img src="{{ slide.thumb }}"></a>
+                        </div>
+                    {% endfor %}
+
+            </div>
+        {% else %}
+            You have no images loaded.
+        {% endif %}
+        <!--form action="{{ processform }}" method="post" class="ajax" enctype="multipart/form-data" name="{{ formName }}">
+        <input type="hidden" name="csrf_token" value="{{ csrftoken }}" >
+        </form-->
+    </div>
+</div>
+{% endblock %}

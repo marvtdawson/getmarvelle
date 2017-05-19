@@ -1,0 +1,89 @@
+<?php
+// Used with jquery_function_controllers.js
+$url = $_POST['contentVar'];
+
+switch($url){
+    case 'music_index':
+        include_once'/views/music/index';
+        break;
+    case 'add_cd':
+        break;
+    case 'add_music':
+        break;
+    case 'add_edit':
+        break;
+    case 'delete_music':
+        break;
+    // video
+    case 'video_index':
+        break;
+    case 'add_video':
+        break;
+    case 'edit_video':
+        break;
+    case 'delete_video':
+        break;
+}
+
+if ($url == "ADD_PROPERTY") {
+    include_once "wl_Rental_Msg_Pages/add_Property.php";
+} else 
+    if ($url == "add_cd") {
+        include_once "wl_Rental_Msg_Pages/add_Tenant.php";
+    } else 
+        if ($url == "APARTMENT_INSPECTION") {
+            include_once "wl_Rental_Msg_Pages/Apartment_Inspection_Notice.php";
+        } else 
+            if ($url == "APARTMENT INSPECTION REMINDER") {
+                include_once "wl_Rental_Msg_Pages/Apartment_Inspection_Reminder.php";
+            } else 
+                if ($url == "APARTMENT INSPECTION 2ND REMINDER") {
+                    include_once "wl_Rental_Msg_Pages/Apartment_Inspection_2nd_Reminder.php";
+                } else 
+                    if ($url == "APARTMENT MAINTAINENCE") {
+                        include_once "wl_Rental_Msg_Pages/Apartment_Maintainence_Notice.php";
+                    } else 
+                        if ($url == "APARTMENT MAINTAINENCE REMINDER") {
+                            include_once "wl_Rental_Msg_Pages/Apartment_Maintainence_Reminder.php";
+                        } else 
+                            if ($url == "APARTMENT_MAINTAINENCE_24HOUR_NOTICE") {
+                                include_once "wl_Rental_Msg_Pages/Apartment_Maintainence_24Hour_Notice.php";
+                            } else 
+                                if ($url == "BUILDING_MAINTAINENCE") {
+                                    include_once "wl_Rental_Msg_Pages/Building_Maintainence_Notice.php";
+                                } else 
+                                    if ($url == "BUILDING MAINTAINENCE REMINDER") {
+                                        include_once "wl_Rental_Msg_Pages/Building_Maintainence_Reminder.php";
+                                    } else 
+                                        if ($url == "BUILDING_MAINTAINENCE_24HOUR_NOTICE") {
+                                            include_once "wl_Rental_Msg_Pages/Building_Maintainence_24Hour_Notice.php";
+                                        } else 
+                                            if ($url == "DELETE_PROPERTY") {
+                                                include_once "wl_Rental_Msg_Pages/delete_Property.php";
+                                            } else 
+                                                if ($url == "DELETE_TENANT") {
+                                                    include_once "wl_Rental_Msg_Pages/delete_Tenant.php";
+                                                } else 
+                                                    if ($url == "EDIT_PROPERTY") {
+                                                        include_once "wl_Rental_Msg_Pages/edit_Property.php";
+                                                    } else 
+                                                        if ($url == "EDIT_TENANT") {
+                                                            include_once "wl_Rental_Msg_Pages/edit_Tenant.php";
+                                                        } else 
+                                                            if ($url == "OFFICE_CLOSED") {
+                                                                include_once "wl_Rental_Msg_Pages/office_Closed.php";
+                                                            } else 
+                                                                if ($url == "PRIVACY") {
+                                                                    include_once "wl_Rental_Msg_Pages/privacy.php";
+                                                                } else 
+                                                                    if ($url == "RENTS_DUE") {
+                                                                        include_once "wl_Rental_Msg_Pages/rents_Late_Notice.php";
+                                                                    } else 
+                                                                        if ($url == "RENTS DUE REMINDER") {
+                                                                            include_once "wl_Rental_Msg_Pages/rents_Late_Reminder.php";
+                                                                        } else 
+                                                                            if ($url == "RENTS DUE 2ND REMINDER") {
+                                                                                include_once "wl_Rental_Msg_Pages/rents_Late_2nd_Reminder.php";
+                                                                            }
+
+?>

@@ -1,0 +1,124 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent  %}
+    <div id="cPanPages">
+        <h1> {{ pageTitle }}  </h1 >
+        <div>Back to <a href="{{ memberprofileindex }}">Member Profile</a></div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3 cpanel-thumb-container">
+                <a href="{{ cmsmusicindex }}">
+                    <i class="fa fa-music fa-5x" aria-hidden="true" ></i>
+                </a>
+                <div class="cpanel-thumb-label">
+                    <a href="{{ cmsmusicindex }}">MUSIC</a>
+                </div>
+            </div>
+
+            <div class="col-sm-3 cpanel-thumb-container">
+                <a href="{{ videoindex }}">
+                    <i class="fa fa-youtube-square fa-5x" aria-hidden="true" ></i>
+                </a>
+                <div class="cpanel-thumb-label">
+                    <a href="{{ videoindex }}">VIDEOS</a>
+                </div>
+            </div>
+            <div class="col-sm-3 cpanel-thumb-container">
+                <a href="{{ cmsvmindex }}">
+                    <i class="fa fa-area-chart fa-5x" aria-hidden="true" ></i>
+                </a>
+                <div class="cpanel-thumb-label">
+                    <a href="{{ cmsvmindex }}">VIRTUAL MANAGER</a>
+                </div>
+            </div>
+            <div class="col-sm-3 cpanel-thumb-container">
+                <a href="{{ galleryindex }}">
+                    <i class="fa fa-camera-retro fa-5x" aria-hidden="true" ></i>
+                </a>
+                <div class="cpanel-thumb-label">
+                    <a href="{{ galleryindex }}">GALLERY</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-6 cpanel-thumb-container">
+                <a href="{{ userprofileindex }}">
+                    <i class="fa fa-user fa-5x" aria-hidden="true" ></i>
+                </a>
+                <div class="cpanel-thumb-label">
+                    <a href="{{ userprofileindex }}">USER PROFILE</a>
+                </div>
+            </div>
+            <div class="col-md-6 cpanel-thumb-container">
+                <a href="{{ socialsindex }}">
+                    <i class="fa fa-facebook fa-5x" aria-hidden="true" ></i>
+                </a>
+                <div class="cpanel-thumb-label">
+                    <a href="{{ socialsindex }}">SOCIAL MEDIA</a>
+                </div>
+            </div>
+            <div class="col-sm-3 cpanel-thumb-container">
+                <a href="{{ contactentries }}">
+                    <i class="fa fa-bullhorn fa-5x" aria-hidden="true" ></i>
+                </a>
+                <div class="cpanel-thumb-label">
+                    <a href="{{ contactentries }}">CONTACTS</a>
+                </div>
+            </div>
+            <div class="col-sm-3 cpanel-thumb-container">
+                <a href="{{ profilenotifications }}">
+                    <i class="fa fa-bell fa-5x" aria-hidden="true" ></i>
+                </a>
+                <div class="cpanel-thumb-label">
+                    <a href="{{ profilenotifications }}">SETTINGS</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="col-sm-3 cpanel-thumb-container">
+                <a href="{{ corepageindex }}">
+                    <i class="fa fa-files-o fa-5x" aria-hidden="true" ></i>
+                </a>
+                <div class="cpanel-thumb-label">
+                    <a href="{{ corepages }}">PAGES</a>
+                </div>
+            </div>
+            <div class="col-sm-3 cpanel-thumb-container">
+                <a href="{{ themeindex }}">
+                    <i class="fa fa-sitemap fa-5x" aria-hidden="true" ></i>
+                </a>
+                <div class="cpanel-thumb-label">
+                    <a href="{{ themeindex }}">THEME</a>
+                </div>
+            </div>
+            <div class="col-md-6 cpanel-thumb-container">
+                <a href="{{ cmscontbrdindex }}">
+                    <i class="fa fa-sliders fa-5x" aria-hidden="true" ></i>
+                </a>
+                <div class="cpanel-thumb-label">
+                    <a href="{{ cmscontbrdindex }}">CONTROL BOARD</a>
+                </div>
+            </div>
+            <div class="col-md-6 cpanel-thumb-container">
+                <a href="{{ slideshowindex }}">
+                    <i class="fa fa-file-photo-o fa-5x" aria-hidden="true" ></i>
+                </a>
+                <div class="cpanel-thumb-label">
+                    <a href="{{ slideshowindex }}">SLIDE SHOW</a>
+                </div>
+            </div>
+        </div><hr>
+        <div class="row">
+            <div class="col-sm-3 cpanel-thumb-container">
+                <a href="{{ memberprofileindex }}">
+                    <i class="fa fa-files-o fa-5x" aria-hidden="true" ></i>
+                </a>
+                <div class="cpanel-thumb-label">
+                    <a href="{{ memberprofileindex }}">PROFILE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,29 @@
+<?php
+    if (!empty($_SESSION['adminMem_Id'] )){ ?>
+        <div class="cpanel-leftmenu-button">
+            <img src="/assets/images/site/mobile_menu_button_no_bkground.png">
+        </div>
+        <div class="submast_company_name">
+            <a href="{{ cpanelindexpage }}">Welcome</a>
+            {{ username }}!
+        </div>
+        <div class="cpanel_logout_link">
+            <a href="/logout/index">
+                LOG OUT
+            </a>
+        </div>
+    <?php } ?>
+
+    <?php
+    /*        if (!empty($_SESSION['regMem_Spec'])){ */?><!--
+            <div class="submast_company_name">
+                <a href="cPanel.php?m=<?php /*echo $_SESSION['regMem_Id'] ; */?>">Welcome</a> back
+                <?php /*echo $_SESSION['regMem_Fname'] . ' ' . $_SESSION['regMem_Lname'] ;*/?>!
+            </div>
+            <div class="cpanel_logout_link">
+                <a href="cPan_LogOut.php?m=<?php /*echo $_SESSION['regMem_Id']; */?>">
+                    LOG OUT
+                </a>
+            </div>
+            <h1>Member cPanel</h1>
+        --><?php /*} */?>

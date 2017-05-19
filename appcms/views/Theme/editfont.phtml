@@ -1,0 +1,21 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent  %}
+<div id="cPanPages">
+    <h1>{{ pageTitle }}</h1>
+    <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+    <hr>
+    <div class="row">
+        <form action="{{ processForm }}" method="post" class="ajax" name="{{ formName }}" >
+            <div class="cpan-input-wrapper">
+                <label>Choose Font Style: </label>
+                <input type="text" name="font-color" placeholder=" ">
+            </div>
+            <div class="cpan-input-wrapper">
+                <label>Choose Font Color: </label>
+                <input type="color" name="font-color" placeholder=" ">
+            </div>
+            <input type="submit" name="{{ submitButton }}" value="Change Font" class="cpan-forms-submit-button" />
+        </form>
+    </div>
+</div>
+{% endblock %}

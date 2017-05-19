@@ -1,0 +1,19 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent  %}
+<div id="cPanPages">
+    <h1>{{ pageTitle }}</h1>
+    <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+    <hr>
+    <div class="row">
+        <form action="{{ processForm }}" method="post" class="ajax" name="{{ formName }}" >
+            <div class="cpan-input-wrapper">
+                <h3>PAGE BACKGROUND COLOR</h3>
+                <div class="form-field-para">This site page current background rbga color is:  {{ currentEmail }}</div>
+                <label>Choose Page Background Color</label>
+                <input type="color" name="page-background-color" placeholder="" value="">
+            </div>
+            <input type="submit" name="{{ submitButton }}" value="Change Page Color" class="cpan-forms-submit-button" />
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent  %}
+<div id="cPanPages">
+    <h1>{{ pageTitle }}</h1>
+    <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+    <hr>
+    <div class="row">
+        <form action="{{ processArtistName }}" method="post" class="ajax" name="{{ nameForm }}" >
+            <div class="cpan-input-wrapper">
+                <h3>ARTIST NAME</h3>
+                <div class="form-field-para">You are known as:  {{ artistName }}</div>
+                <label>Update Your Artist Name: </label>
+                <input type="text" name="artist-name" id="artist-name" class="input-form-fields" value="">
+            </div><hr>
+            <input type="hidden" name="csrf_token" value="{{ csrftoken }}" >
+            <input type="submit" name="artistNameSubmitButton " value="SAVE" class="cpan-forms-submit-button" />
+        </form>
+    </div>
+</div>
+{% endblock %}

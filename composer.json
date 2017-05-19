@@ -1,0 +1,53 @@
+{
+  "autoload": {
+    "classmap":[
+      "app",
+      "app/controller/",
+      "app/views",
+      "appcms",
+      "appcms/config",
+      "appcms/controller",
+      "appcms/views",
+      "core",
+      "library",
+      "library/Controller",
+      "library/CSRF",
+      "library/Filters",
+      "library/Keywords",
+      "library/Models",
+      "library/Models/Iscriptz",
+      "library/Models/Proxy",
+      "library/Modules",
+      "library/View",
+      "library/View/Helper"
+    ],
+    "psr-4": {
+      "App\\":"app",
+      "App\\Config\\":"app/config/",
+      "App\\Controller\\":"app/controller/",
+      "App\\Views\\":"app/views/",
+      "App\\Views\\Core\\":"app/views/core/",
+      "App\\Views\\Layout\\":"app/views/layout/",
+      "AppCMS\\":"appcms",
+      "AppCMS\\Config\\":"appcms/config/",
+      "AppCMS\\Controller\\":"appcms/controller/",
+      "AppCMS\\Views\\":"appcms/views/",
+      "Core\\":"core",
+      "Library\\": "library/",
+      "Library\\Controller\\": "library/Controller/",
+      "Library\\CSRF\\":"library/CSRF/",
+      "Library\\Filters\\":"library/Filters/",
+      "Library\\Models\\":"library/Models/",
+      "Library\\Models\\Iscriptz\\":"library/Models/Iscriptz/",
+      "Library\\Models\\Proxy\\":"library/Models/Proxy/",
+      "Library\\Modules\\":"library/Modules/",
+      "Library\\View\\":"library/View/",
+      "Library\\View\\Helper\\":"library/View/Helper"
+    }
+  },
+  "require": {
+    "twig/twig": "~1.0",
+    "phpunit/phpunit": "^6.1",
+    "phpmailer/phpmailer": "^5.2"
+  }
+}

@@ -1,0 +1,112 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent  %}
+<div id="cPanPages">
+    <h1> {{ pageTitle }}  </h1 >
+    <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ aboutPage }}">
+                <i class="fa fa-pencil fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ aboutPage }}">ABOUT</a>
+            </div>
+        </div>
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ productPage }}">
+                <i class="fa fa-file fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ productPage }}">PRODUCTS</a>
+            </div>
+        </div>
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ servicesPage }}">
+                <i class="fa fa-file fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ servicesPage }}">SERVICES</a>
+            </div>
+        </div>
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ vlogPage }}">
+                <i class="fa fa-file fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ vlogPage }}">VLOG</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ termsPage }}">
+                <i class="fa fa-file fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ termsPage }}">TERMS AND CONS</a>
+            </div>
+        </div>
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ blogPage }}">
+                <i class="fa fa-file fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ blogPage }}">BLOG</a>
+            </div>
+        </div>
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ privacyPage }}">
+                <i class="fa fa-file fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ privacyPage }}">PRIVACY</a>
+            </div>
+        </div>
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ socialPage }}">
+                <i class="fa fa-file fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ socialPage }}">SOCIAL MEDIA</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ loginPage }}">
+                <i class="fa fa-file fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ loginPage }}">LOGIN</a>
+            </div>
+        </div>
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ contactPage }}">
+                <i class="fa fa-file fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ contactPage }}">CONTACT</a>
+            </div>
+        </div>
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ registerPage }}">
+                <i class="fa fa-file fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ registerPage }}">REGISTER</a>
+            </div>
+        </div>
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ galleryPage }}">
+                <i class="fa fa-file fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="galleryPage">GALLERY</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

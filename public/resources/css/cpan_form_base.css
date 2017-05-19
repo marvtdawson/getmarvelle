@@ -1,0 +1,636 @@
+@CHARSET "ISO-8859-1";
+
+/*-- ========================================== Media Query Min Width 1920px ==================================== */
+/*--  Copyright (c) 2015, Home Grown Designs LLC.  All rights reserved */
+@media ( max-width:1920px) {
+	/* -- START REG FORM  -- */
+	.wl-aflz-reg-form-container{
+		width: 40%;
+		margin-bottom: 20px;
+		float: left;
+		text-align: right;
+		min-height: 390px;
+		border: 1px solid #545454;
+		box-shadow: 2px 2px 2px #545454;
+		border-radius: 7px;
+		padding: 10px;
+	}
+
+	/*-- START MESSAGE / NOTICE CONTAINERS  --*/	
+	#showProperties {
+		margin-bottom: 100px;
+		width: 63%;
+		float: left;
+	}
+	.property-info-wrapper{
+		width: 100%;
+		margin: 2% 5% 0;		
+	}
+	.property_info{
+		float: left;
+		border: 1px solid #545454;
+		border-radius: 5px;
+		margin: 5px 0 0 15px;
+		background-color: #e9e9e9;
+		padding: 5px;
+		min-width: 250px;
+	}
+	#showForms {
+		width: 75%;
+		float: left;
+	}
+	/* START FORMS WRAPPERS */
+	.sendMsgWrapper {
+		margin: 19px 5% 0 450px;
+		width: 43%;
+		background-color: #EBEAEC;
+		padding: 3px;
+		min-height: 250px;
+		border-radius: 7px;
+		box-shadow: 2px 2px 2px #545454;
+	}	
+	.sendMsgFormWrapper {
+		margin: 30px auto 0;
+		width: 50%;
+	}
+	.submit-buttonWrapper{
+		margin: 0 auto 0;
+		width: 100px;
+	}
+	#load_screen {
+		background: #000;
+		opacity: 1;
+		position: fixed;
+		z-index: 10;
+		top: 0;
+		width: 100%;
+		height: 700px;
+	}
+	#loading {
+		color: #FFF;
+		width: 120px;
+		height: 24px;
+		margin: 300px auto;
+	}
+	/*-- SHOW FORMS --*/
+	.form-wrapper {
+		margin-left: 25%;
+		margin-top: 135px;
+		width: 65%;
+	}
+	.formz-content-wrapper {
+		width: 100%;
+		margin: 15px auto 100px;
+		min-height: 505px;
+		/*background-color: #F9FBFF;
+		background-color: #F7F0E8;*/
+	}
+	.form-fields-div {
+		padding: 5px;
+	}
+	.wl-reg-form-fields {
+		border-radius: 5px;
+		padding: 5px;
+	}
+	.form-fields-textarea{
+		height: 60px;
+	}
+	.fa-5x {
+		font-size: 7em;
+		margin-top: 10px;
+	}
+	.cpanel-thumb-container{
+		width: 150px;
+		height: 150px;
+		border: 1px solid #545454;
+		border-radius: 10px;
+		box-shadow: 9px 9px 20px #545454;
+		margin: 0 0 0 58px;
+		text-align: center;
+		background-color: #cacaca;
+	}
+	.cpanel-thumb-label{
+		color: #0f0f0f;
+		margin: 15px auto 0;
+		text-align: center;
+		font-size: 12px;
+		font-weight: bold;
+	}
+	.cpanel-content-wrapper {
+		margin-bottom: 65px;
+		min-height: 500px;
+        float: left;
+        width: 100%;
+	}
+	.cpanel-leftmenu-button{
+		width: 60px;
+		height:60px;
+		float: left;
+	}
+	.admin-header {
+		border: 1px solid #79ABF0;
+		border-radius: 10px;
+		box-shadow: 2px 2px 2px #545454;
+		padding: 10px;
+		height: 40px;
+		width: 100%;
+		margin: 2px auto 0;
+		float: left;
+	}
+	#cPanPages{
+		/*display:inline-block;
+		float: left;
+		left: 200px;*/
+		padding: 10px;
+		width: 80%;
+		margin: 0 auto 50px ;
+	}
+	#cpanel-menu {
+        display: none;
+		width: 13%;
+		list-style: none;
+		float: left;
+		border-color: #000;
+		border-right: 1px solid;
+		box-shadow: 0 0 0 #545454;
+		margin: 82px 0 0 5px;
+        position: absolute;
+        z-index: 2500;
+        background-color: #ffffff;
+	}
+	#cpanel-menu ul li {
+		list-style: none;
+	}
+	#cpanel-menu-category1,
+	#cpanel-menu-category2,
+		#cpanel-menu-category3, #cpanel-menu-category4,
+		#cpanel-menu-category5, #cpanel-menu-category6,
+		#cpanel-menu-category7 {
+		display: none;
+		padding: 7px;
+		list-style: none;
+		width: 85%;
+		font-size: 14px;
+		color: #000;
+		margin-bottom: 5px;
+	}
+	#cpanel-menu-category1:hover, #cpanel-menu-category2:hover,
+		#cpanel-menu-category3:hover, #cpanel-menu-category4:hover,
+		#cpanel-menu-category5:hover, #cpanel-menu-category6:hover,
+		#cpanel-menu-category7:hover {
+		cursor: pointer;
+	 	background-color: #d1e2fa;
+			border-radius:5px;
+			color: #0e36d8;
+			font-weight: bold;
+	}
+	/* --- --- */
+	.admin-header {
+		padding: 6px;
+		height: 65px;
+		width: 100%;
+		margin: 2px auto 0;
+	}
+
+	#admin-menu-category1 ul, #admin-menu-category2 ul,
+		#admin-menu-category3 ul, #admin-menu-category4 ul,
+		#admin-menu-category5 ul, #admin-menu-category6 ul,
+		#admin-menu-category7 ul {
+		display: none;
+	}
+	#admin-menu-category1 ul, #admin-menu-category2 ul,
+		#admin-menu-category3 ul, #admin-menu-category4 ul,
+		#admin-menu-category5 ul, #admin-menu-category6 ul,
+		#admin-menu-category7 ul {
+		margin-left: -20px;
+		width: 82%;
+	}
+	#admin-menu-category1 ul li, #admin-menu-category2 ul li,
+		#admin-menu-category3 ul li, #admin-menu-category4 ul li,
+		#admin-menu-category5 ul li, #admin-menu-category6 ul li,
+		#admin-menu-category7 ul li {
+		list-style: none;
+		border: none;
+		border-radius: 7px;
+		margin-bottom: 10px;
+		padding: 5px;
+		text-decoration: none;
+		background-color: #79ABF0;
+	}
+	#admin-menu-category1 ul li:hover, #admin-menu-category2 ul li:hover,
+		#admin-menu-category3 ul li:hover, #admin-menu-category4 ul li:hover,
+		#admin-menu-category5 ul li:hover, #admin-menu-category6 ul li:hover,
+		#admin-menu-category7 ul li:hover {
+		background-color: #545454;
+	}
+	#admin-menu-category1 ul li a, #admin-menu-category2 ul li a,
+		#admin-menu-category3 ul li a, #admin-menu-category4 ul li a,
+		#admin-menu-category5 ul li a, #admin-menu-category6 ul li a,
+		#admin-menu-category7 ul li a {
+		width: 100%;
+		font-size: 13px;
+		font-family: "Lucida Sans", sans-serif;;
+		text-decoration: none;
+		position: relative;
+		top: 1px;
+		padding: 15px;
+		color: #fff;
+	}
+	#admin-menu-category1 ul li a:hover, #admin-menu-category2 ul li a:hover,
+		#admin-menu-category3 ul li a:hover, #admin-menu-category4 ul li a:hover,
+		#admin-menu-category5 ul li a:hover, #admin-menu-category6 ul li a:hover,
+		#admin-menu-category7 ul li a:hover {
+		text-decoration: underline;
+		color: #fff;
+	}
+
+	/* ---- LOGIN IN FORM ---*/
+	.main-login-div-container {
+		float: none;
+		width: 30%;
+		padding: 5px;
+		border-radius: 5px;
+	}
+	/* --- RESULT MESSAGES  --- */
+	.result-message-wrapper {
+		width: 65%;
+	}
+	.cpanel-page-wrapper{
+		width: 100%;
+		min-height: 621px;
+	}
+
+	.cpanFormWrapper{
+		width: 70%;
+		margin: 5px auto 0;
+		float: left;
+		overflow-y: scroll;
+	}
+	.cpanProfileWrapper{
+		width: 100%;
+		float: none;
+		min-height: 400px;
+		background-color: #000000;
+	}
+	.cpan-H1{
+
+	}
+	.cpan-form{
+		background-color: #f7f7f7;
+		opacity: 1;
+		border-radius: 15px;
+		box-shadow: 2px 2px 2px #545454;
+		padding: 20px;
+	}
+	.cpan-input-wrapper{
+		margin: 4px auto 5px;
+		padding: 10px;
+	}
+	.cpan-forms-submit-button{
+		background-color: #6DBB65;
+		border-radius: 5px;
+		padding: 5px;
+		box-shadow: 2px 2px 2px #545454;
+	}
+	.corepages-submit-button{
+		margin-top: 10px;
+		border-radius: 5px;
+		padding: 5px;
+		box-shadow: 2px 2px 2px #545454;
+	}
+	.cpanel_logout_link {
+		width: 100px;
+		float: right;
+		margin-right: 10px;
+		margin-top: 17px;
+		position: relative;
+		text-align: center;
+	}
+	.cpanel-ad-column{
+		width: 20%;
+		float: left;
+		min-height: 605px;
+		margin: 22px 15px 0 5px;
+	}
+	.cpanel-ad-banner{
+		margin: 0 auto 55px;
+		width: 720px;
+		float: none;
+		position: relative;
+	}
+	/* ################ MEMBER PROFILE HOME PAGE  ################ */
+	.member-profile-page-wrapper{
+		width: 100%;
+		min-height: 400px;
+		margin: 0 0 1px 0;
+	}
+	.member-profile-billboard-wrapper{
+		width: 100%;
+		height: 400px;
+		background-color: #000000;
+	}
+	.member-profile-billboard-img-container{
+		width: 1200px;
+		height: 400px;
+		margin: 0 auto 0;
+	}
+	.member-profile-billboard-img{
+		width: 1200px;
+		height: 400px;
+	}
+	.member-content-wrapper{
+		width: 1200px;
+		margin: 0 auto 0;
+		background-color: #777;
+		border: 1px solid #DADFE1;
+	}
+	.member-profile-thumbnail-container{
+		width: 1200px;
+		margin: 0 auto 0;
+	}
+	.member-profile-thumbnail-wrapper{
+		width: 175px;
+		height: 175px;
+		border-radius: 10px;
+		border: 5px groove silver;
+		margin: -150px 0 5px 0;
+		position: absolute;
+		text-align: center;
+	}
+	.member-profile-thumbnail-image{
+		width: 164px;
+		height: 164px;
+	}
+	.member-profile-thumbnail-text{
+		font-size: 12px;
+		margin: 10px 0 0 0;
+	}
+	.member-profile-edit-bar{
+		width: 100%;
+		/*background-color: #0fb708;*/
+		height: 50px;
+		box-shadow: 2px 4px 2px #ececec
+	}
+	.profile-edit-bar-content {
+		width: 765px;
+		height: 45px;
+		margin: 0 0 0 365px;
+		position: relative;
+		/*border: 1px solid black;*/
+
+	}
+	.profile-edit-setting{
+		width: 20%;
+		height: 15px;
+		float: left;
+		text-align: center;
+		position: relative;
+		margin: 18px 0 0 0;
+		font-size: 12px;
+	}
+	.member-profile-widget-container{
+		width: 300px;
+		margin: 5px 0 0 5px;
+		float: left;
+	}
+	.member-profile-content{
+		width: 890px;
+		height: 100px;
+		margin: 5px 0 0 0;
+		float: right;
+	}
+	.twitter-widget{
+		margin: 0 0 15px 0;
+	}
+	.widget-ad-banner{
+		margin: 0 0 10px 0;
+	}
+	.submast_company_name {
+		margin-left: 10px;
+		margin-top: 17px;
+		z-index: 45;
+		float: left;
+	}
+	.sound-xfs-wrapper{
+		width: 900px;
+		margin: 0 auto 0;
+	}
+	.sound-xfs-row-wrapper{
+		float: left;
+		display: inline;
+	}
+	.sound-xfs-btn-wrapper{
+		display: inline;
+		float: left;
+	}
+	.sound-xfs-button{
+		width: 200px;
+		height: 200px;
+		float: left;
+		margin: 0 0 0 10px;
+		border: 1px solid #545454;
+		border-radius: 10px;
+		box-shadow: 2px 2px 2px #171717;
+	}
+	#editcorepages{
+		min-height: 350px;
+	}
+	.edit-page-select {
+		margin: 0 0 10px 0;
+	}
+	.edit-page-editor{
+
+	}
+	.tinymce-editor-wrapper{
+		min-height: 616px;
+		display: block;
+	}
+	.form-field-para{
+		margin-bottom: 25px;
+	}
+	.show-validation-container{
+
+	}
+	#gif-div,
+	#file-type,
+	#file-ext,
+	#file-size{
+		width: 30%;
+		height: 50px;
+		border: 1px solid darkorange;
+	}
+}
+/*-- ========================================== Media Query Min Width 1600px ==================================== */
+/*--  Copyright (c) 2015, Home Grown Designs LLC.  All rights reserved */
+@media ( max-width :1600px) {
+	/* -- START REG FORM  -- */
+	.wl-aflz-reg-form-container {
+		width: 40%;
+		margin-bottom: 20px;
+		float: left;
+		min-height: 390px;
+		border: 1px solid #545454;
+		box-shadow: 2px 2px 2px #545454;
+		border-radius: 7px;
+		padding: 10px;
+	}
+
+	/*-- START MESSAGE / NOTICE CONTAINERS  --*/
+	#showForms {
+		width: 75%;
+		float: left;
+	}
+	.showMsgForm {
+		margin-top: 7px;
+		width: 49%;
+		background-color: #EBEAEC;
+		position: relative;
+		padding: 3px;
+	}
+    .cpanel-content-wrapper {
+        /*margin-bottom: 45px;
+        min-height: 500px;
+        float: left;
+        width: 100%;*/
+    }
+    .admin-header {
+        padding: 5px;
+        height: 56px;
+        width: 100%;
+        margin: 2px auto 0;
+    }
+	.cpanel-leftmenu-button{
+		width: 45px;
+		height: 45px;
+		float: left;
+	}
+    #cPanPages{
+       /* margin:0;
+        display:inline-block;
+        float: left;
+        padding: 10px;
+        width: 75%;
+        left: 200px;*/
+    }
+    #cpanel-menu {
+        display: none;
+        width: 13.5%;
+        list-style: none;
+        float: left;
+        border-color: #999999;
+        border-right: 1px solid;
+		border-bottom: 1px solid;
+        box-shadow: 3px 3px 3px #545454;
+        margin: 5px 0 0 5px;
+        position: absolute;
+        z-index: 2500;
+        background-color: #ffffff;
+		border-radius: 5px
+    }
+    #cpanel-menu ul li {
+        list-style: none;
+    }
+    #cpanel-menu-category1, #cpanel-menu-category2,
+    #cpanel-menu-category3, #cpanel-menu-category4,
+    #cpanel-menu-category5, #cpanel-menu-category6,
+    #cpanel-menu-category7, #cpanel-menu-category8,
+	#cpanel-menu-category9, #cpanel-menu-category10 {
+        padding: 7px;
+        list-style: none;
+        width: 87%;
+        font-size: 14px;
+        color: #000;
+        margin-bottom: 5px;
+    }
+    #cpanel-menu-category1:hover, #cpanel-menu-category2:hover,
+    #cpanel-menu-category3:hover, #cpanel-menu-category4:hover,
+    #cpanel-menu-category5:hover, #cpanel-menu-category6:hover,
+    #cpanel-menu-category7:hover, #cpanel-menu-category8:hover,
+	#cpanel-menu-category9:hover, #cpanel-menu-category10:hover  {
+        cursor: pointer;
+        background-color: #d1e2fa;
+        border-radius:5px;
+        color: #0e36d8;
+        font-weight: bold;
+    }
+    /* --- --- */
+    #admin-menu-category1 ul, #admin-menu-category2 ul,
+    #admin-menu-category3 ul, #admin-menu-category4 ul,
+    #admin-menu-category5 ul, #admin-menu-category6 ul,
+    #admin-menu-category7 ul, #admin-menu-category8 ul,
+	#admin-menu-category9 ul, #admin-menu-category10 ul {
+        display: none;
+    }
+    #admin-menu-category1 ul, #admin-menu-category2 ul,
+    #admin-menu-category3 ul, #admin-menu-category4 ul,
+    #admin-menu-category5 ul, #admin-menu-category6 ul,
+    #admin-menu-category7 ul, #admin-menu-category8 ul,
+	#admin-menu-category9 ul, #admin-menu-category10 ul {
+        margin-left: -20px;
+        width: 82%;
+    }
+    #admin-menu-category1 ul li, #admin-menu-category2 ul li,
+    #admin-menu-category3 ul li, #admin-menu-category4 ul li,
+    #admin-menu-category5 ul li, #admin-menu-category6 ul li,
+    #admin-menu-category7 ul li, #admin-menu-category8 ul li,
+	#admin-menu-category9 ul li, #admin-menu-category10 ul li {
+        list-style: none;
+        border: none;
+        border-radius: 7px;
+        margin-bottom: 10px;
+        padding: 3px;
+        text-decoration: none;
+        background-color: #79ABF0;
+		width: 100%;
+    }
+    #admin-menu-category1 ul li:hover, #admin-menu-category2 ul li:hover,
+    #admin-menu-category3 ul li:hover, #admin-menu-category4 ul li:hover,
+    #admin-menu-category5 ul li:hover, #admin-menu-category6 ul li:hover,
+    #admin-menu-category7 ul li:hover, #admin-menu-category8 ul li:hover,
+	#admin-menu-category9 ul li:hover, #admin-menu-category10 ul li:hover {
+        background-color: #545454;
+    }
+    #admin-menu-category1 ul li a, #admin-menu-category2 ul li a,
+    #admin-menu-category3 ul li a, #admin-menu-category4 ul li a,
+    #admin-menu-category5 ul li a, #admin-menu-category6 ul li a,
+    #admin-menu-category7 ul li a, #admin-menu-category8 ul li a,
+	#admin-menu-category9 ul li a, #admin-menu-category10 ul li a {
+        width: 100%;
+        font-size: 13px;
+        font-family: "Lucida Sans", sans-serif;;
+        text-decoration: none;
+        position: relative;
+        top: 1px;
+        padding: 15px;
+        color: #fff;
+    }
+    #admin-menu-category1 ul li a:hover, #admin-menu-category2 ul li a:hover,
+    #admin-menu-category3 ul li a:hover, #admin-menu-category4 ul li a:hover,
+    #admin-menu-category5 ul li a:hover, #admin-menu-category6 ul li a:hover,
+    #admin-menu-category7 ul li a:hover, #admin-menu-category8 ul li a:hover,
+	#admin-menu-category9 ul li a:hover, #admin-menu-category10 ul li a:hover {
+        text-decoration: underline;
+        color: #fff;
+    }
+	.navItem{
+		width: 130px;
+	}
+	.sound-xfs-wrapper{
+		width: 900px;
+	}
+	.sound-xfs-row-wrapper{
+		float: left;
+		display: inline;
+	}
+	.sound-xfs-btn{
+		width: 200px;
+		height: 200px;
+		float: left;
+		margin: 0 0 0 10px;
+	}
+	.sound-xfs-button{
+		width: 200px;
+		height: 200px;
+	}
+
+}

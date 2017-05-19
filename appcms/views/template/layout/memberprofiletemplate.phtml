@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+{% include '/template/layout/pagehead.phtml' %}
+<body>
+    <div class="container-fluid">
+        <!-- start header -->
+        <div class="row">
+            <div class="mast-head-wrapper">
+                {% include 'template/layout/profileheader.phtml' %}
+            </div>
+        </div>
+
+        <!-- start cpanel page wrapper -->
+        <div class="row">
+            <div class="member-profile-page-wrapper">
+                    {% block cpanelcontent %}
+                    {% endblock %}
+            </div>
+        </div>
+
+        <!-- push / clear footer -->
+        <div class="row push_footer_down"></div>
+
+        <!-- start footer -->
+        <div class="row">
+            <div class="col-lg footer-wrapper">
+                {% include 'template/layout/footer.phtml' %}
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

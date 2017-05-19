@@ -1,0 +1,323 @@
+@charset "utf-8";
+/* The below script is for the Custom Formatted Responsive Code */
+/* CSS Document for www.getmarvelle.com, last modified 12/18/2016 */
+/*  Copyright (c) 2016, Home Grown Designs LLC.  All rights reserved */
+
+/* SITE PAGE PROPERTIES
+--------------------------------- */
+body{
+	margin: 0;
+}
+.errMsg{
+	font-size: 12px;
+	color: #F80206;
+}
+#push_footer_down{
+	height: 100px;
+}
+
+/* ############################################### START MEDIA QUERIES ################################################# */
+@media (max-width: 1920px){
+	/*--------- START PAGE WRAPPER ------- */
+	.page-content-wrapper{
+		width: 100%;
+	}
+	.main-content-wrapper{
+		width: 100%;
+		margin: 0 auto 100px;
+	}
+	.index-main-content{
+		width: 100%;
+		min-height: 600px;
+	}
+	.index-thumb-logo-container{
+		width: 700px;
+		height: 166px;
+		margin: 100px auto 20px;
+		padding: 10px;
+	}
+	.index-thumb-logo-wrapper{
+		width: 145px;
+		height: 145px;
+		margin: 0 auto 0;
+		border-radius: 10px;
+		border: 1px solid #6254f0;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.index-thumb-logo-text{
+		margin: 20px auto 0;
+		font-size: 65px;
+		color: #6254f0;
+	}
+	.index-description-text-wrapper{
+		width: 900px;
+		height: 160px;
+		margin: 0 auto 25px;
+		text-align: center;
+		padding: 5px;
+		font-size: 30px;
+		color: #6254f0;
+		position: relative;
+	}
+	.index-download-button-wrapper{
+		width: 250px;
+		height: 55px;
+		margin: 0 auto 0;
+		border: 1px solid #6254f0;
+		border-radius: 5px;
+	}
+	.index-download-text{
+		width: 250px;
+		height: 55px;
+		margin: 15px auto 0;
+		text-align: center;
+		color: #6254f0;
+	}
+	.index-download-current-version{
+		margin: 0 auto 0;
+		text-align: center;
+	}
+	.main-content{
+		width: 1300px;
+		margin: 15px auto 0;
+		min-height: 616px;
+	}
+	.main-content-tier1-wrapper{
+		width: 100%;
+	}
+	.main-content-tier2-wrapper{
+		width: 100%;
+	}
+	.four-thumbnails-wrapper{
+		width: 1300px;
+		height: 250px;
+		margin: 0 auto 0;
+	}
+	.three-thumbnails-wrapper{
+		width: 1300px;
+		margin: 0 auto 0;
+	}
+	.videoWrapper{
+		width: 99%;
+	}
+	.videoWrapper > video{
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+	}
+	.video-container{
+		width: 700px;
+		height: 440px;
+	}
+	.vlog-globalroll{
+		width: 700px;
+		float: left;
+	}
+	.vlog-videoWrapper{
+		width: 700px;
+		min-height: 440px;
+		border: 1px solid grey;
+	}
+	.vlog-titleWrapper{
+
+	}
+	.vlog-infoWrapper{
+		width: 700px;
+		margin-bottom: 50px;
+		padding: 5px;
+	}
+	.vlog-site-hash{
+		float: left;
+	}
+	.vlog-author-info{
+
+	}
+	.vlog-social-icons-wrapper{
+		width: 185px;
+		float: right;
+		right: 5px;
+	}
+	.vlog-social-icon{
+		float: right;
+		margin-left: 5px;
+		width: 40px;
+		height: 30px;
+		text-align: center;
+	}
+	.vlog-articleWrapper{
+
+	}
+	.vlog-global-asidebar{
+		float: right;
+		right: 10px;
+		width: 400px;
+		border: 1px solid blue;
+	}
+	.vlog-subscribeform-wrapper{
+		width: 100%;
+		background-color: green;
+	}
+	.contact-column{
+		width: 150px;
+		text-align: center;
+	}
+	.contact-row{
+		width: 150px;
+		text-align: center;
+		background-color: #adadad;
+	}
+	.overlay {
+		/* Height & width depends on how you want to reveal the overlay (see JS below) */
+		height: 100%;
+		width: 0;
+		position: fixed; /* Stay in place */
+		z-index: 500; /* Sit on top */
+		left: 0;
+		top: 0;
+		background-color: rgb(0,0,0); /* Black fallback color */
+		background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+		overflow-x: hidden; /* Disable horizontal scroll */
+		transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	}
+	/* Position the close button (top right corner) */
+	.overlay .closebtn {
+		position: absolute;
+		top: -25px;
+		right: 45px;
+		font-size: 60px;
+	}
+	/* The navigation links inside the overlay */
+	.overlay a {
+		padding: 8px;
+		text-decoration: none;
+		font-size: 36px;
+		color: #FFFFFF;
+		display: block; /* Display block instead of inline */
+		transition: 0.3s; /* Transition effects on hover (color) */
+	}
+}
+
+@media(max-width:1700px) {
+
+
+}
+
+@media (max-width: 1600px){
+	.main-content{
+		width: 1200px;
+		min-height: 548px;
+	}
+
+}
+
+
+@media (max-width: 1366px){
+	.main-content{
+		width: 1050px;
+	}
+}
+
+@media(max-width:1280px) {
+
+
+}
+
+@media(max-width:1050px) {
+
+
+}
+
+@media(max-width:1024px) {
+	.four-thumbnails-wrapper{
+		width: 93%;
+		height: 250px;
+		margin: 0 auto 0;
+	}
+
+}
+
+@media(max-width:900px) {
+
+
+}
+
+@media(max-width:800px) {
+
+
+}
+
+@media (max-width: 768px){
+	.main-content-wrapper{
+		width: 100%;
+	}
+	.main-content{
+		width: 95%;
+		margin: 5px auto 0;
+	}
+	.vlog-globalroll{
+		width: 98%;
+		/*float: left;*/
+	}
+	.vlog-videoWrapper{
+		width: 98%;
+	}
+	.video-container{
+		width: 98%;
+	}
+}
+
+
+@media (max-width: 480px){
+
+	.main-content-wrapper{
+		width: 99%;
+	}
+	.vlog-globalroll{
+		width: 99%;
+		/*float: left;*/
+	}
+	.vlog-videoWrapper{
+		width: 99%;
+	}
+	.video-container{
+		width: 98%;
+	}
+	.four-thumbnails-wrapper{
+		width: 98%;
+		margin: 0 auto 0;
+	}
+}
+
+@media (max-width: 414px){
+
+	.main-content-wrapper{
+		width: 99%;
+	}
+	.vlog-globalroll{
+		width: 99%;
+		/*float: left;*/
+	}
+	.vlog-videoWrapper{
+		width: 99%;
+	}
+	.video-container{
+		width: 98%;
+	}
+}
+
+@media (max-width: 360px){
+
+	.main-content-wrapper{
+		width: 99%;
+	}
+}
+
+@media (max-width: 320px){
+
+	.main-content-wrapper{
+		width: 99%;
+	}
+}
+/* ---- ######################################### END MEDIA QUERIES ################################################# ----- */

@@ -1,0 +1,374 @@
+@charset "utf-8";
+/* CSS Document */
+/* The below script is for the GetMarvelle Formatted Responsive Design Website */
+/* CSS Document for getmarvelle.com, created on 3/18/2017 */
+
+/*-- ========================================== Media Query Min Width 1920px ==================================== */
+@media (max-width: 1920px){
+
+	.wlAdBanner-Container{
+		display: none;
+	}
+	.adBanner970{
+		display: none;
+	}
+	.adBanner250_x_90_Edit_Add_Page{
+		margin-left: 180px;
+		margin-top: -95px;
+		width: 96px;
+	}
+	.wl-mgrs-AdBanner-Container{
+		margin-left: 225px;
+	}
+	.contact-page-ad-wrapper{
+		width: 30%;
+		position: relative;
+		top: 200px;
+		float: left;
+		left: 100px;
+	}
+	div.std-300x300-wrapper ins.adsbygoogle{
+		background: none;
+	}
+	ins.adsbygoogle{
+		background: transparent !important;
+	}
+	.core-ads-para-right-wrapper{
+		float: right;
+		width: 300px;
+		height: 300px;
+	}
+	.core-ads-lower-wrapper{
+		margin: 0 auto 20px;
+		width: 76%;
+	}
+
+}
+
+
+/*-- ========================================== Media Query Min Width 1700px ==================================== */
+@media (max-width: 1700px){
+
+	.wlAdBanner-Container{
+		display: none;
+	}
+	.adBanner970{
+		display: none;
+	}
+	.adBanner250_x_90_Edit_Add_Page{
+		margin-left: 180px;
+		margin-top: -95px;
+		width: 96px;
+	}
+	.wl-mgrs-AdBanner-Container{
+		margin-left: 225px;
+	}
+	.contact-page-ad-wrapper{
+		display: block;
+		position: relative;
+		top: 200px;
+		left: 100px;
+	}
+	ins.adsbygoogle{
+		background: transparent !important;
+	}
+
+}
+
+/*-- ========================================== Media Query Min Width 1600px ==================================== */
+@media (max-width: 1600px){
+
+	.wlAdBanner-Container{
+		display: none;
+	}
+	.adBanner970{
+		display: none;
+	}
+	.adBanner250_x_90_Edit_Add_Page{
+		margin-left: 180px;
+		margin-top: -95px;
+		width: 96px;
+	}
+	.wl-mgrs-AdBanner-Container{
+		margin-left: 225px;
+	}
+	.contact-page-ad-wrapper{
+		position: relative;
+		top: 200px;
+		left: 100px;
+	}
+	ins.adsbygoogle{
+		background: transparent !important;
+	}
+
+}
+
+/*-- ========================================== Media Query Min Width 1366px ==================================== */
+@media (max-width: 1366px){
+
+	.wlAdBanner-Container{
+		display: none;
+		height:92px;
+		width:998px;
+		margin-left:250px;
+		border:hidden;
+		border-radius:7px;
+		position:absolute;
+	}
+	.adBanner970{
+		display: none;
+		width:974px;
+		height:94px;
+		padding:10px;
+		margin-left:15px;
+	}
+	.adBanner250_x_90_Edit_Add_Page{
+		margin-left: 180px;
+		margin-top: -95px;
+		width: 96px;
+	}
+	.wl-mgrs-AdBanner-Container{
+		margin-left: 225px;
+	}
+	.contact-page-ad-wrapper{
+		position: relative;
+		top: 200px;
+		left: 100px;
+	}
+}
+
+/*-- ========================================== Media Query Min Width 1024px ==================================== */
+@media (max-width: 1024px){
+
+	.wlAdBanner-Container{
+		display: none;
+	}
+	.adBanner970{
+		display: none;
+	}
+	.adBanner250_x_90_Edit_Add_Page{
+		margin-left: 180px;
+		margin-top: -95px;
+		width: 96px;
+	}
+	.wl-mgrs-AdBanner-Container{
+		margin-left: 225px;
+	}
+	.contact-page-ad-wrapper{
+		position: relative;
+		top: 200px;
+		left: 100px;
+	}
+
+}
+
+/*-- ========================================== Media Query Min Width 768px ==================================== */
+@media (max-width: 768px){
+
+	.wlAdBanner-Container{
+		display: none;
+	}
+	.adBanner970{
+		display: none;
+	}
+	.adBanner250_x_90_Edit_Add_Page{
+		margin-left: 180px;
+		margin-top: -95px;
+		width: 96px;
+	}
+	.wl-mgrs-AdBanner-Container{
+		margin-left: 225px;
+	}
+	.contact-page-ad-wrapper{
+		position: relative;
+		top: 200px;
+		left: 100px;
+	}
+	.core-ads-lower-wrapper {
+		margin: 0 auto 25px;
+		width: 94%;
+		text-align: center;
+	}
+	.core-ads-para-right-wrapper{
+
+	}
+
+}
+
+/*-- ========================================== Media Query Min Width 640px ==================================== */
+@media (max-width: 640px){
+
+	.wlAdBanner-Container{
+		display: none;
+	}
+	.adBanner970{
+		display: none;
+	}
+	.adBanner250_x_90_Edit_Add_Page{
+		margin-left: 180px;
+		margin-top: -95px;
+		width: 96px;
+	}
+	.wl-mgrs-AdBanner-Container{
+		margin-left: 225px;
+	}
+	.contact-page-ad-wrapper{
+		position: relative;
+		top: 200px;
+		left: 100px;
+	}
+	.core-ads-para-right-wrapper{
+		display: none;
+	}
+
+}
+/*-- ========================================== Media Query Min Width 568px ==================================== */
+@media (max-width: 568px){
+
+	.wlAdBanner-Container{
+		display: none;
+	}
+	.adBanner970{
+		display: none;
+	}
+	.adBanner250_x_90_Edit_Add_Page{
+		margin-left: 180px;
+		margin-top: -95px;
+		width: 96px;
+	}
+	.wl-mgrs-AdBanner-Container{
+		margin-left: 225px;
+	}
+	.contact-page-ad-wrapper{
+		position: relative;
+		top: 200px;
+		left: 100px;
+	}
+
+}
+
+/*-- ========================================== Media Query Min Width 418px ==================================== */
+@media (max-width: 418px){
+
+	.wlAdBanner-Container{
+		display: none;
+	}
+	.adBanner970{
+		display: none;
+	}
+	.adBanner250_x_90_Edit_Add_Page{
+		margin-left: 180px;
+		margin-top: -95px;
+		width: 96px;
+	}
+	.wl-mgrs-AdBanner-Container{
+		margin-left: 225px;
+	}
+	.contact-page-ad-wrapper{
+		position: relative;
+		top: 200px;
+		left: 100px;
+	}
+
+}
+
+/*-- ========================================== Media Query Min Width 414px ==================================== */
+@media (max-width: 414px){
+
+	.wlAdBanner-Container{
+		display: none;
+	}
+	.adBanner970{
+		display: none;
+	}
+	.adBanner250_x_90_Edit_Add_Page{
+		margin-left: 180px;
+		margin-top: -95px;
+		width: 96px;
+	}
+	.wl-mgrs-AdBanner-Container{
+		margin-left: 225px;
+	}
+	.contact-page-ad-wrapper{
+		position: relative;
+		top: 200px;
+		left: 100px;
+	}
+
+}
+
+/*-- ========================================== Media Query Min Width 375px ==================================== */
+@media (max-width: 375px){
+
+	.wlAdBanner-Container{
+		display: none;
+	}
+	.adBanner970{
+		display: none;
+	}
+	.adBanner250_x_90_Edit_Add_Page{
+		margin-left: 180px;
+		margin-top: -95px;
+		width: 96px;
+	}
+	.wl-mgrs-AdBanner-Container{
+		margin-left: 225px;
+	}
+	.contact-page-ad-wrapper{
+		position: relative;
+		top: 200px;
+		left: 100px;
+	}
+
+}
+
+/*-- ========================================== Media Query Min Width 360px ==================================== */
+@media (max-width: 360px){
+
+	.wlAdBanner-Container{
+		display: none;
+	}
+	.adBanner970{
+		display: none;
+	}
+	.adBanner250_x_90_Edit_Add_Page{
+		margin-left: 180px;
+		margin-top: -95px;
+		width: 96px;
+	}
+	.wl-mgrs-AdBanner-Container{
+		margin-left: 225px;
+	}
+	.contact-page-ad-wrapper{
+		position: relative;
+		top: 200px;
+		left: 100px;
+	}
+
+}
+
+/*-- ========================================== Media Query Min Width 320px ==================================== */
+/*--  Copyright (c) 2015, Home Grown Designs LLC.  All rights reserved */
+@media (max-width: 320px){
+	
+	.wlAdBanner-Container{
+		display: none;
+	}
+	.adBanner970{ 
+		display: none;
+	}
+	.adBanner250_x_90_Edit_Add_Page{
+		margin-left: 180px; 
+		margin-top: -95px;
+		width: 96px; 
+	}
+	.wl-mgrs-AdBanner-Container{
+		margin-left: 225px;	
+	}
+	.contact-page-ad-wrapper{
+		position: relative;
+		top: 200px;
+		left: 100px;
+	}
+	
+}

@@ -1,0 +1,48 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent  %}
+<div id="cPanPages">
+    <h1>{{ pageTitle }}</h1>
+    <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+    <hr>
+    <div class="row">
+        <div class="control-board-wrapper">
+            <div class="now-playing-wrapper">
+                <!-- -->
+                <div class="intro-timer"></div>
+
+                <!-- -->
+                <div class="playing-info"></div>
+
+                <!-- -->
+                <div class="remaining-timer"></div>
+
+            </div>
+            <!-- -->
+            <div class="mixer-console-wrapper">
+                <!-- playlist wrapper -->
+                <div class="playlist-wrapper">
+                </div>
+                <!-- control board wrapper -->
+                <div class="artist-board-wrapper">
+
+                    <!-- slide show wrapper -->
+                    <div class="artist-slide-wrapper">
+                    </div>
+
+                    <!-- mixer wrapper -->
+                    <div class="mixer-wrapper">
+                        <!-- -->
+                        <div class="mic-wrapper"></div>
+
+                        <!-- -->
+                        <div class="track-wrapper"></div>
+
+                        <!-- -->
+                        <div class="phonein-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

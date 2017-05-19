@@ -1,0 +1,47 @@
+<?php
+$message = '
+<html>
+<head>
+</head>
+<body>
+<h3>Welcome To ' . Config::SITE_NAME . '</h3>
+<div style="padding:12px; font-size:17px;">
+    Hello <span class="email-username-font">' .  $this->userName  . '</span>!!!!,<br /><br />
+
+    Thank you for choosing ' . Config::SITE_NAME .  ' as you Extended Virtual Manager!!!<br /><br />
+
+    Our goal is to help you increase productivity via direct communication.<br />
+
+    Whether your goal is to:<br />
+
+    <ul>
+        <li>Increase turns on your commerical washers and dryers.</li>
+        <li>Communicate to your tenants or customer directly.</li>
+        <li>Market directly to existing customers.</li>
+        <li>Gain new customers.</li>
+        <li>Offer discounts and new incentives.</li>
+        <li>Lower overall operation cost.</li>
+    </ul>'
+
+    . Config::SITE_NAME . ' has the tools you need to promote your brand, label, swag and musiQ.<br /><br />
+
+    You can now log into ' . Config::SITE_NAME . ' after you have successfully completed the activation process using your:<br /><br />
+
+    Registered email address: ' . Config::SITE_NAME . ' <br />
+
+    And your registered password.<br /><br />
+
+    Please click on the activation link below to finish the registration.<br />
+
+    <a href="http://www.getmarvelle.com/user/activation?mp=' . $this->userId . 'seq=' . $this->userName.'&ws=' . $this->userEmail . '">
+        http://www.getmarvelle.com/user/activation?mp=' . $this->userId  .
+        '&seq=' . $this->userName .
+        '&ws=' . $this->userEmail . '
+    </a><br />
+
+    Thank you,<br /><br />
+
+    TEAM ' . Config::SITE_NAME . '!!
+</div>
+</body>
+</html>';

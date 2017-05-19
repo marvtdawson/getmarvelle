@@ -1,0 +1,43 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent %}
+<div id="cPanPages">
+    <h1>{{ pageTitle }}</h1>
+    <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+    <hr>
+    <div class="row">
+        <form action="{{ processForm }}" method="post" class="ajax" name="{{ formName }}" >
+
+            <div class="cpan-input-wrapper">
+                <h3>STATE</h3>
+                {% if userstate  %}
+                <div class="form-field-para">Your home state is:  {{ userstate }}</div>
+                {% endif %}
+                <label>Select State: </label>
+                <select id="user_state" name="user_state"  class="input-form-fields">
+                    <option selected="selected">  -- Select Your State --</option>
+                    {% for key, state in states %}
+                    <option value="{{ state }}"> {{ state }} </option>
+                    {% endfor %}
+                </select>
+            </div><hr>
+
+            <div class="cpan-input-wrapper">
+                <h3>CITY</h3>
+                <div class="form-field-para">You Rep:  {{ city }}</div>
+                <label>Enter City: </label>
+                <input type="text" name="user_city" id="user_city" class="input-form-fields" value="  {{ city }}">
+            </div><hr>
+
+            <div class="cpan-input-wrapper">
+                <h3>ZIP CODE</h3>
+                <div class="form-field-para">Your zip code:  {{ zipcode }}</div>
+                <label>Enter Zip Code: </label>
+                <input type="text" name="user_zipcode" id="user_zipcode" class="input-form-fields" value="  {{ zipcode }}">
+            </div><hr>
+
+            <input type="submit" name="{{ submitButton }}" value="SAVE" class="cpan-forms-submit-button" />
+        </form>
+
+    </div>
+</div>
+{% endblock %}

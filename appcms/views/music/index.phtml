@@ -1,0 +1,42 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent  %}
+<div id="cPanPages">
+    <h1> {{ pageTitle }}  </h1>
+    <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ addcd }}">
+                <i class="fa fa-music fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ addcd }}">ADD CD</a>
+            </div>
+        </div>
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ addmusic }}">
+                <i class="fa fa-plus fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ addmusic }}">ADD TRAK</a>
+            </div>
+        </div>
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ editmusic }}">
+                <i class="fa fa-pencil fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ editmusic }}">EDIT TRAK</a>
+            </div>
+        </div>
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ deletemusic }}">
+                <i class="fa fa-trash fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ deletemusic }}">DELETE TRAK</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

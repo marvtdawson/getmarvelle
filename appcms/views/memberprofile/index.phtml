@@ -1,0 +1,58 @@
+{% extends "template/layout/memberprofiletemplate.phtml" %}
+{% block cpanelcontent  %}
+<div class="member-profile-billboard-wrapper">
+    <div class="member-profile-billboard-img-container">
+        <a href="">
+            <img class="member-profile-billboard-img" src="{{ billboard }}" title="" >
+        </a>
+    </div>
+</div>
+<div class="member-profile-edit-bar">
+    <div class="member-profile-thumbnail-container">
+        <div class="member-profile-thumbnail-wrapper">
+            <a href="#">
+                <img class="member-profile-thumbnail-image" src="{{ thumbProfile }}">
+            </a>
+            <div class="member-profile-thumbnail-text">@{{ username }}</div>
+        </div>
+        <div class="profile-edit-bar-content">
+            <div class="profile-edit-setting">
+                <a href="/appcms/cpanel/index">CPANEL</a>
+            </div>
+            <div class="profile-edit-setting">
+                <a href="/appcms/users/index">EDIT PROFILE</a>
+            </div>
+            <div class="profile-edit-setting">
+                <a href="/appcms/users/artistbio">EDIT BIO</a>
+            </div>
+            <div class="profile-edit-setting">
+                <a href="/appcms/music/index">EDIT MUSIC</a>
+            </div>
+            <div class="profile-edit-setting">
+                <a href="/appcms/video/index">EDIT VIDEO</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="member-content-wrapper">
+    <div class="member-profile-widget-container">
+        <div class="twitter-widget">
+            <a class="twitter-timeline"  href="https://twitter.com/HomeGrownMusiq" data-widget-id="365114738276970500">Tweets by @HomeGrownMusiq</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div><hr>
+        <div class="widget-ad-banner">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- cpanel-ad-banner -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-3000506446152743"
+                 data-ad-slot="4361994840"
+                 data-ad-format="auto"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+    <div class="member-profile-content"></div>
+</div>
+{% endblock %}

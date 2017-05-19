@@ -1,0 +1,26 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent  %}
+<div id="cPanPages">
+    <h1>{{ pageTitle }}</h1>
+    <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+    <hr>
+    <div class="row">
+        <form action="{{ processaddimageform }}" method="post" class="ajax" enctype="multipart/form-data" name="{{ formName }}">
+           <div class="cpan-input-wrapper">
+                <label>Select Slide: </label>
+                <input type="file" id="upload_slide_image" name="upload_slide_image"
+                       class="input-form-fields" value="" />
+            </div>
+            <input type="submit" value="SAVE" class="cpan-forms-submit-button" name="save_SubmitBtn" id="save_SubmitBtn" />
+            <iframe id="uploadframe" name="uploadframe"></iframe>
+            <div class="show-validation-container">
+                <div id="gif-div"></div>
+                <div id="file-type"></div>
+                <div id="file-ext"></div>
+                <div id="file-size"></div>
+            </div>
+            <input type="hidden" name="csrf_token" value="{{ csrftoken }}" >
+        </form>
+    </div>
+</div>
+{% endblock %}

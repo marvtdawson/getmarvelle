@@ -1,0 +1,30 @@
+@CHARSET "ISO-8859-1";
+@media (max-width: 1920px) {
+    .sound-xfs-wrapper {
+        width: 900px;
+        margin: 0 auto 0;
+    }
+    .sound-xfs-row-wrapper {
+        float: left;
+        display: inline;
+    }
+    .sound-xfs-btn-wrapper {
+        display: inline;
+        float: left;
+    }
+    .sound-xfs-button {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 0 0 0 10px;
+        /* border: 1px solid #545454;*/
+        border-radius: 10px;
+        box-shadow: 4px 4px 4px #171717;
+        /*font-family: "Franklin Gothic Bold" sans-serif;*/
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .sound-xfs-button:hover {
+        box-shadow: 2px 2px 2px #161616;
+    }
+}

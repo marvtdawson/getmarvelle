@@ -1,0 +1,30 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent  %}
+<div id="cPanPages">
+    <h1>{{ pageTitle }}</h1>
+    <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+    <hr>
+    <div class="row">
+        <form action="{{ processForm }}" method="post" class="ajax" >
+            <input type="hidden" name="csrf_token" value="{{ csrftoken }}" >
+            <div class="cpan-input-wrapper">
+                <label>Type of Trak: </label>
+                <select name="trak_style" autofocus class="input-form-fields">
+                    <option value="selected">-- SELECT ONE --</option>
+                    {% for key, style in styles %}
+                    <option value="{{ style }}"> {{ style }} </option>
+                    {% endfor %}
+                </select>
+                <div id="gif-div"></div>
+            </div>
+            <div class="cpan-input-wrapper">
+                <label>Upload Trak: </label>
+                <input type="file"  id="uploadTrak" name="uploadTrak"
+                       class="input-form-fields"  />
+            </div>
+            <div id="valid-element"></div>
+            <input type="submit" value="Upload Banger" class="cpan-forms-submit-button" />
+        </form>
+    </div>
+</div>
+{% endblock %}

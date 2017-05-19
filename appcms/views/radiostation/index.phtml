@@ -1,0 +1,26 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent  %}
+<div id="cPanPages">
+    <h1> {{ pageTitle }}  </h1 >
+    <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ controlboard }}">
+                <i class="fa fa-sliders fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ controlboard }}">CONTROL BOARD</a>
+            </div>
+        </div>
+        <div class="col-sm-3 cpanel-thumb-container">
+            <a href="{{ soundeffects }}">
+                <i class="fa fa-file-sound-o fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ soundeffects }}">SOUND EFFECTS</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

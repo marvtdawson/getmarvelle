@@ -1,0 +1,23 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent  %}
+<div id="cPanPages">
+    <h1>{{ pageTitle }}</h1>
+    <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+    <hr>
+    <div class="row">
+        <form action="" method="post" class="ajax" enctype="multipart/form-data" name="cdMusicFormName">
+            <input type="hidden" name="csrf_token" value="{{ csrftoken }}" >
+            <div class="cpan-input-wrapper">
+                <label>Name of CD</label>
+                <input type="text" name="cdName" class="input-form-fields"  placeholder=" ex: To Beyond And Back III">
+            </div>
+            <div class="cpan-input-wrapper">
+                <label>Upload CD Cover: </label>
+                <input type="file"  name="uploadCdCover"
+                       class="input-form-fields"  />
+            </div>
+            <input type="submit" value="Upload CD Cover" class="cpan-forms-submit-button" name="uploadTrakButton" />
+        </form>
+    </div>
+</div>
+{% endblock %}

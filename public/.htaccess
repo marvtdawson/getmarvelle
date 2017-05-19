@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+
+## Comment the below line and uncomment the REQUEST_URI lines for production
+RewriteRule ^(.*)$ index.php?$1 [L,QSA]
+
+## Uncomment to push to production
+##RewriteCond %{REQUEST_URI} !^public
+##RewriteRule ^(.*)$ public/$1 [L]

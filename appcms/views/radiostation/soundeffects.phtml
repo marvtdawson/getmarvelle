@@ -1,0 +1,30 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent  %}
+<div id="cPanPages">
+    <h1>{{ pageTitle }}</h1>
+    <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+    <hr>
+    <div class="row col-md-10">
+            <h3>DJ Check In</h3>
+            <div class="sound-xfs-wrapper">
+                <div class="sound-xfs-row-wrapper">
+                    <div class="sound-xfs-btn-wrapper">
+                        <input type="button" name="xfs1" value="CAR HORN" class="sound-xfs-button">
+                    </div>
+                    <div class="sound-xfs-btn-wrapper">
+                        <input type="button" name="xfs2" value="COW" class="sound-xfs-button">
+                    </div>
+                    <div class="sound-xfs-btn-wrapper">
+                        <input type="button" name="xfs3" value="BITCH SLAP" class="sound-xfs-button">
+                    </div>
+                    <div class="sound-xfs-btn-wrapper">
+                        <input type="button" name="xfs3" value="THUMP" class="sound-xfs-button">
+                    </div>
+                    <div class="sound-xfs-btn-wrapper">
+                        <input type="button" name="xfs3" value="ELEVATOR" class="sound-xfs-button">
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+{% endblock %}

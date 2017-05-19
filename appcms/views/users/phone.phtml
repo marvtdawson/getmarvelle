@@ -1,0 +1,19 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent  %}
+<div id="cPanPages">
+    <h1>{{ pageTitle }}</h1>
+    <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+    <hr>
+    <div class="row">
+        <form action="{{ processForm }}" method="post" class="ajax" name="{{ formName }}" >
+            <div class="cpan-input-wrapper">
+                <h3>PRIMARY PHONE NUMBER</h3>
+                <div class="form-field-para">Your phone number is:  {{ phoneNumber }}</div>
+                <label>Enter New Phone Number: </label>
+                <input type="text" name="user-phone" id="user-phone" class="input-form-fields">
+            </div>
+            <input type="submit" name="" value="Save Phone" class="cpan-forms-submit-button" />
+        </form>
+    </div>
+</div>
+{% endblock %}

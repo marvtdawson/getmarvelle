@@ -1,0 +1,18 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent  %}
+<div id="cPanPages">
+    <h1>{{ pageTitle }}</h1>
+    <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+    <hr>
+    <div class="row">
+        <form action="../ajax/addAjax_med_terms.php" method="post" class="ajax" >
+            <input type="hidden" name="csrf_token" value="{{ csrftoken }}" >
+            <div class="cpan-input-wrapper">
+                <label>Choose CD To Edit: </label>
+                <input type="text" name="cd-name" placeholder=" ">
+            </div>
+            <input type="submit" value="Edit Track" class="cpan-forms-submit-button" />
+        </form>
+    </div>
+</div>
+{% endblock %}

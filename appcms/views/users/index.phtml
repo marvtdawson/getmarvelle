@@ -1,0 +1,68 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent %}
+<div id="cPanPages">
+    <h1> {{ pageTitle }} </h1>
+    <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-4 cpanel-thumb-container">
+            <a href="{{ editemail }}">
+                <i class="fa fa-envelope fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ editemail }}">PRIMARY EMAIL</a>
+            </div>
+        </div>
+        <div class="col-sm-4 cpanel-thumb-container">
+            <a href="{{ editalternativeemail }}">
+                <i class="fa fa-envelope-square fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ editalternativeemail }}">2nd EMAIL</a>
+            </div>
+        </div>
+        <div class="col-sm-4 cpanel-thumb-container">
+            <a href="{{ editphone }}">
+                <i class="fa fa-phone fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ editphone }}">PHONE</a>
+            </div>
+        </div>
+        <div class="col-sm-4 cpanel-thumb-container">
+            <a href="{{ editaddress }}">
+                <i class="fa fa-home fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ editaddress }}">ADDRESS</a>
+            </div>
+        </div>
+    </div><br><hr><br>
+    <div class="row">
+        <div class="col-sm-4 cpanel-thumb-container">
+            <a href="{{ artistName }}">
+                <i class="fa fa-area-chart fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ artistName }}">ARTIST NAME</a>
+            </div>
+        </div>
+        <div class="col-sm-4 cpanel-thumb-container">
+            <a href="{{ artistStyle }}">
+                <i class="fa fa-area-chart fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ artistStyle }}">ARTIST STYLE</a>
+            </div>
+        </div>
+        <div class="col-sm-4 cpanel-thumb-container">
+            <a href="{{ artistBio }}">
+                <i class="fa fa-area-chart fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ artistBio }}">ARTIST BIO</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

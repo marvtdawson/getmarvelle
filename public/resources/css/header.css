@@ -1,0 +1,1042 @@
+@CHARSET "ISO-8859-1";
+/* ========================================== Media Query Min Width @ 1920 PX ==================================== */
+/* Copyright (c) 2015, Home Grown Designs LLC.  All rights reserved */
+@media (max-width: 1920px){
+	.mast-head-wrapper{
+		width: 100%;
+		height: 55px;
+		background-color: #6254f0;
+		/*position: fixed;
+         margin-top: 0px;
+        z-index: 150; */
+	}
+	.mast-head{ /* -- Mast Head Container @ 1366 PX -- */
+		width: 1300px;
+		margin: 0 auto 0;
+	}
+	.logo-wrapper{ /* -- Mast Head Logo Container @ 1920 PX -- */
+		margin: 0 auto 0;
+		height: 55px;
+		width: 340px;
+		position:absolute;
+		z-index:75;
+	}
+	.logo{
+		width: 45px;
+		height: 45px;
+		float:left;
+		margin-top: 5px;
+		background: url("../../assets/images/logo.jpg");
+        background: no-repeat;
+        background-size: 75px 75px;
+	}
+	.logo-image{
+		width : 100px;
+		height: 55px;
+	}
+	.logo-text{
+		width: 275px;
+		margin: 18px 6px 0 55px;
+		position:absolute;
+		z-index:75;
+		font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", sans-serif;
+		font-size:20px;
+		color:#FFF;
+		text-decoration: none;
+	}
+	.logo-text > a:link,
+	.logo-text > a:visited,
+	.logo-text > a:hover,
+	.logo-text > a:active {
+		color:#FFF;
+		text-decoration: none;
+	}
+	.motto{ /* -- Mast Head Motto Container @ 1920 PX -- */
+		margin-left: 105px;
+		margin-top:40px;
+		position:absolute;
+		float: left;
+		width: 415px;
+		z-index: 150;
+	}
+	.motto-font{ /* -- Mast Head Motto Font @ 1920 PX -- */
+		font-size:18px;
+		color:#000;
+		text-decoration:none;
+	}
+	/* ---- START MEMBERS LOG IN FORM ----- */
+	.mast-head-logIn-form-fields-container{
+		float: right;
+		right: 10%;
+		width: 500px;
+		margin-top: 70px;
+	}
+	.mast-head-logIn-input-div{
+		float: left;
+		padding-left: 10px;
+		position: relative;
+	}
+	.mast-head-logIn-form-fields{
+		/* background-color:#000; */
+		border-radius:7px;
+		width: 130px;
+	}
+	.mast-head-logIn-form-font{
+		color: #fff;
+		float: left;
+		margin-top: 3px;
+	}
+	.mast-head-logIn-button{
+		float: left;
+		left: 10px;
+		position: relative;
+		top: -3px;
+	}
+	.members-buttons-wrapper{
+		float: right;
+		width: 500px;
+		position: relative;
+		top: 45px;
+		color:#FFF;
+		font-family: Arial sans-serif;
+		font-size: 14px;
+	}
+	.members-login{
+		position: absolute;
+		top: -1px;
+		margin-left: 35px;
+	}
+	.members-login a{
+		color: #000;
+		text-decoration: none;
+	}
+	.members-login a:hover{
+		color: #BFBBBB;
+		text-decoration: underline;
+	}
+	.members-signup{
+		position: relative;
+		left: 100px;
+		width: 85px;
+		height: 40px;
+		background-color: #79ABF0;
+		text-align:center;
+		top: -29px;
+		border-radius: 3px;
+	}
+	.members-signup a{
+		padding: 3px;
+		color:#FFF;
+		text-decoration: none;
+		top: 11px;
+		position: relative;
+	}
+	.members-signup a:hover{
+		color: #BFBBBB;
+		text-decoration: underline;
+	}
+/*	.nav-mobile-button{
+		display: none;
+		background: url("../../assets/images/site/mobile_menu_button_no_bkground.png");
+	}*/
+	.nav-link-wrapper{
+		float: right;
+		right: 110px;
+		display: block;
+		width: 35%;
+		top: 20px;
+		position: absolute;
+	}
+	.nav-link-wrapper ul{
+		display: block;
+		width: 100%;
+		float: left;
+	}
+	.nav-link-wrapper ul li{
+		width: auto;
+		float: left;
+		margin: 0 0 0 25px;
+		list-style-type: none;
+		color: #ffffff;
+	}
+	.nav-link-wrapper ul li a{
+		text-decoration: none;
+		font-size: 16px;
+		font-family: Arial sans-serif;
+		color: #ffffff;
+	}
+	.nav-link-wrapper ul li a:hover{
+		text-decoration: underline;
+	}
+	/*-- START DROP DOWN --*/
+	.nav-link-wrapper ul ul{
+		display: none;
+	}
+	.nav-link-wrapper ul li:hover ul{
+		display: block;
+		width: 150px;
+		background-color: #79ABF0;
+		position: absolute;
+		z-index: 100;
+		top: 20px;
+		border-radius: 7px;
+	}
+	.nav-link-wrapper ul li ul li{
+		list-style-type: none;
+		width: 150px;
+	}
+	.nav-link-wrapper ul li ul li a{
+		color: #FFF;
+		height: 45px;
+		font-size: 12px;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 3px;
+		left: -36px;
+		position: relative;
+		width: 150px;
+	}
+	.nav-link-wrapper ul li ul li a:hover{
+		text-decoration: underline;
+	}
+	.nav-link-text{
+		float:left;
+		top: -26px;
+		position: relative;
+		margin: 9px;
+		text-decoration: none;
+		list-style: none;
+	}
+	.nav-link-text a,
+	.nav-link-text a:link,
+	.nav-link-text a:active,
+	.nav-link-text a:visited{
+		text-decoration: none;
+		font-family: Arial sans-serif;
+		font-size: 15px;
+		color:#000;
+		padding: 0 10px;
+	}
+	.nav-link-text a:hover{
+		text-decoration: underline;
+	}
+	.nav-link-subtext a,
+	.nav-link-subtext a:link,
+	.nav-link-subtext a:active,
+	.nav-link-subtext a:visited{
+		text-decoration: none;
+		font-family: Arial sans-serif;
+		font-size: 13px;
+	}
+	.nav-link-subtext a:hover{
+		text-decoration: underline;
+	}
+	.nav-search{
+		float: left;
+	}
+	#nav-login-link{
+		float: left;
+		margin-top: 3px;
+	}
+	button.nav-search-button{
+		background: none;
+		border: none;
+	 }
+	button.nav-search-button:hover{
+		background-color: #3db728;
+		/*border: 1px solid #545454;*/
+	}
+}  /* --------------     #end Mast Head Properties @ 1920 PX	--------------------------------- */
+
+/* ========================================== Media Query Min Width @ 1600 PX ==================================== */
+/* Copyright (c) 2015, Home Grown Designs LLC.  All rights reserved */
+@media (max-width: 1600px){
+
+	.mast-head-wrapper{
+		margin-top: 0;
+	}
+	.nav-link-wrapper ul li {
+		width: auto;
+		float: left;
+		margin: 0 0 0 25px;
+		list-style-type: none;
+	}
+	
+	.nav-link-wrapper ul li a:visited, 
+	.nav-link-wrapper ul li a:hover{
+		text-decoration: none;
+	}
+
+	/* ---- START MEMBERS LOG IN FORM ----- */
+	.mast-head-logIn-form-fields-container{ /* -- Mast Head Form Fields Container @ 1366 PX -- */
+		width: 455px;
+	}
+	.clear-header{
+		height: 1px;
+		clear: both;
+	}
+}
+/* --------------     #end Mast Head Properties @ 1600 PX	--------------------------------- */
+
+/* ========================================== Media Query Min Width @ 1366 PX ==================================== */
+
+@media (max-width: 1366px){
+	.mast-head{
+		width: 1050px;
+	}
+	.mast-head-logIn-form-fields-container{
+		width: 470px;
+	}
+	.logo-text{
+		text-decoration: none;
+		color: #FFF;
+	}
+	.logo-text > a:link,
+	.logo-text > a:visited,
+	.logo-text > a:hover,
+	.logo-text > a:active {
+		text-decoration: none;
+		color: #FFF;
+	}
+	.nav-link-wrapper{
+		width: 30%;
+		top: 20px;
+		right: 1%;
+	}
+	.nav-link-wrapper ul {
+		display: block;
+		width: 85%;
+		float: left;
+	}
+}
+/* --------------  Media Query Min Width @ 1281PX - Max Width 1365PX	--------------------------------- */
+@media (min-width: 1281px) and (max-width: 1365px){
+	.nav-link-wrapper{
+		width: 37%;
+		top: 20px;
+	}
+}
+
+/* --------------  Media Query Min Width @ 1280PX 	--------------------------------- */
+@media (max-width: 1280px){
+	.nav-link-wrapper{
+		width: 30%;
+		top: 20px;
+	}
+	.nav-link-wrapper ul {
+		display: block;
+		width: 93%;
+	}
+
+}
+/* --------------  Media Query Min Width @ 1024PX 	--------------------------------- */
+@media (max-width: 1024px){
+	.logo-wrapper{
+		margin: 5px 0 0 35px;
+		height: 55px;
+		width: 340px;
+	}
+	.nav-link-wrapper{
+		width: 36%;
+		top: 20px;
+		right: 1%;
+	}
+	.nav-link-wrapper ul {
+		display: block;
+		width: 93%;
+	}
+
+}
+/* ========================================== Media Query Min Width @ 768 PX ==================================== */
+/* Copyright (c) 2015, Home Grown Designs LLC.  All rights reserved */
+@media (max-width: 768px){
+	.mast-head-wrapper{
+		height: 116px;
+	}
+	.mast-head{ /* -- Mast Head Container @ 768 PX -- */
+		width: 100%;
+		height: 114px;
+	}
+	.logo-wrapper{ /* -- Mast Head Logo Container @ 768 PX -- */
+		margin: 5px 0 0 0;
+		height: 75px;
+		width: 100%;
+		position:absolute;
+		z-index:75;
+	}
+	.logo{
+		width: 100px;
+		height: 100px;
+		float:left;
+	}
+	.logo-image{
+		width : 100px;
+		height: 100px;
+	}
+	.logo-text{
+		width: 337px;
+		margin:58px 6px 0 110px;
+		font-size:30px;
+	}
+	.motto{ /* -- Mast Head Motto Container @ 768 PX -- */
+		margin-left: 105px;
+		margin-top:40px;
+		position:absolute;
+		float: left;
+		width: 415px;
+		z-index: 150;
+	}
+	.motto-font{ /* -- Mast Head Motto Font @ 768 PX -- */
+		font-size:18px;
+		color:#000;
+		text-decoration:none;
+	}
+	/* ---- START MEMBERS LOGIN BUTTONS ----- */
+	.members-buttons-wrapper{
+		float: right;
+		width: 300px;
+		position: relative;
+		top: 45px;
+		color:#FFF;
+		font-family: Arial  sans-serif;
+		font-size: 15px;
+	}
+	.members-login{
+		position: absolute;
+		top: -1px;
+		margin-left: 35px;
+	}
+	.members-login a{
+		font-family: Arial sans-serif;
+		font-size: 13px;
+		color:#000;
+		text-decoration: none;
+	}
+	.members-signup{
+		position: relative;
+		left: 100px;
+		width: 85px;
+		height: 40px;
+		background-color: #79ABF0;
+		text-align:center;
+		top: -29px;
+		border-radius: 3px;
+	}
+	.members-signup a{
+		font-family: Arial sans-serif;
+		font-size: 13px;
+		padding: 3px;
+		color:#FFF;
+		text-decoration: none;
+		top: 11px;
+		position: relative;
+	}
+	.members-signup:hover{
+		background-color: #95C2F8;
+	}
+	.members-signup a:hover{
+		color: #D7D7D7;
+		text-decoration: none;
+	}
+	/* -- START NAVIGATION -- */
+	.nav-mobile-button{
+		display: block;
+		background: url("../../assets/images/site/mobile_menu_button_no_bkground.png") no-repeat;
+		background-size: 50px 50px;
+		width: 50px;
+		height: 50px;
+		margin-top: 50px;
+		position: relative;
+		z-index: 150;
+		float:right;
+		right: 20px;
+	}
+	.cpanel-leftmenu-button{
+		width: 55px;
+		display: block;
+		margin-top: 5px;
+		position: absolute;
+		float:right;
+		right: 15px;
+	}
+	.nav-link-wrapper{
+		float: right;
+		right: 70px;
+		display: none;
+		width: 50%;
+		top: 85px;
+		height: 40px;
+	}
+	.nav-link-wrapper ul{
+		display: block;
+		width: 99%;
+		float: left;
+	}
+	.nav-link-wrapper ul li{
+		width: auto;
+		float: left;
+		list-style-type: none;
+	}
+	.nav-link-wrapper ul li a{
+		text-decoration: none;
+		font-size: 15px;
+		font-family: Arial sans-serif;
+	}
+	.nav-link-wrapper ul li a:hover{
+		text-decoration: underline;
+	}
+	/*-- START DROP DOWN --*/
+	.nav-link-wrapper ul ul{
+		display: none;
+	}
+	.nav-link-wrapper ul li:hover ul{
+		display: block;
+		width: 150px;
+		background-color: #79ABF0;
+		position: absolute;
+		z-index: 100;
+		top: 20px;
+		border-radius: 7px;
+	}
+	.nav-link-wrapper ul li ul li{
+		list-style-type: none;
+		width: 150px;
+	}
+	.nav-link-wrapper ul li ul li a{
+		color: #FFF;
+		height: 45px;
+		font-size: 12px;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 3px;
+		left: -36px;
+		position: relative;
+		width: 150px;
+	}
+	.nav-link-wrapper ul li ul li a:hover{
+		text-decoration: underline;
+	}
+	.nav-link-text{
+		float:left;
+		top: -26px;
+		position: relative;
+		margin: 9px;
+		text-decoration: none;
+		list-style: none;
+	}
+	.nav-link-text a,
+	.nav-link-text a:link,
+	.nav-link-text a:active,
+	.nav-link-text a:visited{
+		text-decoration: none;
+		font-family: Arial sans-serif;
+		font-size: 15px;
+		color:#000;
+		padding: 0 10px;
+	}
+	.nav-link-text a:hover{
+		text-decoration: underline;
+	}
+	.nav-link-subtext a,
+	.nav-link-subtext a:link,
+	.nav-link-subtext a:active,
+	.nav-link-subtext a:visited{
+		text-decoration: none;
+		font-family: Arial sans-serif;
+		font-size: 13px;
+	}
+	.nav-link-subtext a:hover{
+		text-decoration: underline;
+	}
+} /* --------------     #end Mast Head Properties @ 768 PX	--------------------------------- */
+
+@media (max-width: 736px) {
+	.mast-head-wrapper {
+		height: 80px;
+	}
+	.mast-head{
+		height: 80px;
+	}
+	.logo-wrapper{
+		width: 80px;
+		height:65px;
+	}
+	.logo{
+		width: 65px;
+		height: 55px;
+	}
+	.logo-text{
+		width: 300px;
+		margin: 28px 6px 0 60px;
+		font-size:24px;
+	}
+	.nav-link-wrapper {
+		display: none;
+	}
+	/* -- START NAVIGATION -- */
+	.nav-mobile-button{
+		background-size: 40px 40px;
+		margin-top: 23px;
+		right: 35px;
+	}
+}
+
+
+@media (max-width: 667px) {
+	.mast-head-wrapper {
+		height: 80px;
+	}
+	.mast-head{
+		height: 80px;
+	}
+	.logo-wrapper{
+		width: 67px;
+		height:67px;
+	}
+	.logo{
+		width: 65px;
+		height: 65px;
+	}
+	.nav-link-wrapper {
+		display: none;
+	}
+}
+
+
+@media (max-width: 640px) {
+	.mast-head-wrapper {
+		height: 80px;
+	}
+	.mast-head{
+		height: 80px;
+	}
+	.logo-wrapper{
+		width: 85px;
+		height:67px;
+	}
+	.logo{
+		width: 65px;
+		height: 60px;
+	}
+	.nav-link-wrapper {
+		display: none;
+	}
+}
+
+
+
+@media (max-width: 600px) {
+	.mast-head-wrapper {
+		height: 80px;
+	}
+	.mast-head{
+		height: 80px;
+	}
+	.logo-wrapper{
+		width: 67px;
+		height:67px;
+	}
+	.logo{
+		width: 65px;
+		height: 65px;
+	}
+	.nav-link-wrapper {
+		display: none;
+	}
+}
+/* ========================================== Media Query Min Width @ 568 PX ==================================== */
+/* Copyright (c) 2015, Home Grown Designs LLC.  All rights reserved */
+@media (max-width: 568px) {
+	.mast-head-wrapper {
+		height: 80px;
+	}
+	.mast-head{
+		height: 80px;
+	}
+	.logo-wrapper{
+		width: 80px;
+		height:73px;
+	}
+	.logo{
+		width: 77px;
+		height: 65px;
+	}
+	.logo-text {
+		width: 300px;
+		margin: 35px 6px 0 60px;
+		font-size: 24px;
+	}
+	.nav-link-wrapper {
+		display: none;
+	}
+	.nav-mobile-button {
+		background-size: 40px 40px;
+		margin-top: 27px;
+		right: 17px;
+	}
+}
+/* ========================================== Media Query Min Width @ 480 PX ==================================== */
+/* Copyright (c) 2015, Home Grown Designs LLC.  All rights reserved */
+@media (max-width: 480px) {
+	.mast-head-wrapper{
+		height: 70px;
+	}
+	.mast-head{
+		height: 70px;
+	}
+	.logo-wrapper{
+		width: 67px;
+		height:67px;
+	}
+	.logo{
+		width: 65px;
+		height: 65px;
+	}
+}
+
+@media (min-width: 419px) and (max-width: 479px) {
+	.mast-head{
+		height: 70px;
+	}
+	.logo-wrapper{
+		width: 70px;
+		height:70px;
+	}
+	.logo{
+		width: 63px;
+		height: 63px;
+	}
+}
+
+/* ========================================== Media Query Min Width @ 418 PX ==================================== */
+/* Copyright (c) 2015, Home Grown Designs LLC.  All rights reserved */
+@media (max-width: 418px) {
+	.mast-head{
+		height: 70px;
+	}
+	.logo-wrapper{
+		margin: 5px 0 0 0;
+		width: 70px;
+		height:70px;
+	}
+	.logo{
+		width: 47px;
+		height: 47px;
+	}
+	.logo-text{
+		width: 195px;
+		margin: 23px 6px 0 44px;
+		font-size: 17px;
+	}
+	/* -- START NAVIGATION -- */
+	.nav-mobile-button{
+		display: block;
+		width: 32px;
+		height: 32px;
+		background-size: 32px 32px;
+		margin-top: 23px;
+		right: 5px;
+	}
+}
+
+/* ========================================== Media Query Min Width @ 414 PX ==================================== */
+/* Copyright (c) 2015, Home Grown Designs LLC.  All rights reserved */
+@media (max-width: 414px) {
+	.mast-head{
+		height: 70px;
+	}
+	.logo-wrapper{
+		margin: 5px 0 0 0;
+		width: 70px;
+		height:70px;
+	}
+	.logo{
+		width: 47px;
+		height: 47px;
+	}
+	.logo-text{
+		width: 195px;
+		margin: 23px 6px 0 44px;
+		font-size: 17px;
+	}
+	/* -- START NAVIGATION -- */
+	.nav-mobile-button{
+		display: block;
+		width: 32px;
+		height: 32px;
+		background-size: 32px 32px;
+		margin-top: 23px;
+		right: 5px;
+	}
+}
+
+/* ========================================== Media Query Min Width @ 375 PX ==================================== */
+/* Copyright (c) 2015, Home Grown Designs LLC.  All rights reserved */
+@media (max-width: 375px) {
+	.mast-head-wrapper{
+		height: 70px;
+	}
+	.mast-head{ /* -- Mast Head Container @ 320 PX -- */
+		width: 100%;
+		height: 70px;
+	}
+	.logo-wrapper{
+		margin: 5px 0 0 0;
+		width: 70px;
+		height:70px;
+	}
+	.logo{
+		width: 45px;
+		height: 45px;
+		background-size: 50px 50px;
+	}
+	.logo-text {
+		width: 185px;
+		margin: 27px 6px 0 45px;
+		font-size: 16px;
+	}
+	/* -- START NAVIGATION -- */
+	.nav-mobile-button{
+		background-size: 32px 32px;
+		margin-top: 23px;
+		right: 5px;
+	}
+}
+/* ========================================== Media Query Min Width @ 360 PX ==================================== */
+/* Copyright (c) 2015, Home Grown Designs LLC.  All rights reserved */
+@media (max-width: 360px) {
+	.mast-head-wrapper{
+		height: 70px;
+	}
+	.mast-head{ /* -- Mast Head Container @ 320 PX -- */
+		width: 100%;
+		height: 70px;
+	}
+	.logo-wrapper{
+		margin: 5px 0 0 0;
+		width: 70px;
+		height:70px;
+	}
+	.logo{
+		width: 45px;
+		height: 45px;
+		background-size: 50px 50px;
+	}
+	.logo-text {
+		width: 185px;
+		margin: 27px 6px 0 45px;
+		font-size: 16px;
+	}
+	/* -- START NAVIGATION -- */
+	.nav-mobile-button{
+		background-size: 32px 32px;
+		margin-top: 23px;
+		right: 5px;
+	}
+}
+
+
+/* ========================================== Media Query Min Width @ 320 PX ==================================== */
+/* Copyright (c) 2015, Home Grown Designs LLC.  All rights reserved */
+@media (max-width: 320px){
+	.mast-head-wrapper{
+		height: 65px;
+	}
+	.mast-head{ /* -- Mast Head Container @ 320 PX -- */
+		width: 100%;
+		height: 65px;
+	}
+	.logo-wrapper{ /* -- Mast Head Logo Container @ 320 PX -- */
+		height: 60px;
+		width: 60px;
+	}
+	.logo{
+		width: 40px;
+		height: 40px;
+		background-size: 50px 50px;
+	}
+	.logo-text{
+		margin: 25px 6px 0 35px;
+		width: 185px;
+		font-size:12px;
+	}
+	.motto{ /* -- Mast Head Motto Container @ 320 PX -- */
+		margin-left: 105px;
+		margin-top:40px;
+		position:absolute;
+		float: left;
+		width: 415px;
+		z-index: 150;
+		display: none;
+	}
+	.motto-font{ /* -- Mast Head Motto Font @ 320 PX -- */
+		font-size:18px;
+		color:#000;
+		text-decoration:none;
+	}
+	/* ---- START MEMBERS LOG IN FORM ----- */
+	.mast-head-logIn-form-fields-container{ /* -- Mast Head Form Fields Container @ 1366 PX -- */
+		display: none;
+		float: right;
+		right: 10%;
+		width: 300px;
+		margin-top: 70px;
+	}
+	.mast-head-logIn-input-div{
+		float: left;
+		padding-left: 10px;
+		position: relative;
+	}
+	.mast-head-logIn-form-fields{ /* -- Mast Head Form Fields Attributes @ 1366 PX -- */
+		background-color:#000;
+		border-radius:7px;
+	}
+	.mast-head-logIn-form-font{ /* -- Mast Head Form Fields Font @ 1366 PX -- */
+		color: #fff;
+		float: left;
+	}
+	.mast-head-logIn-button{
+		float: left;
+		left: 10px;
+		position: relative;
+	}
+	/* ---- START MEMBERS LOGIN BUTTONS ----- */
+	.members-buttons-wrapper{
+		float: right;
+		width: 300px;
+		position: relative;
+		top: 45px;
+		color:#FFF;
+		font-family: Arial sans-serif;
+		font-size: 15px;
+	}
+	.members-login{
+		position: absolute;
+		top: -1px;
+		margin-left: 35px;
+	}
+	.members-login a{
+		font-family: Arial sans-serif;
+		font-size: 13px;
+		color:#000;
+		text-decoration: none;
+	}
+	.members-signup{
+		position: relative;
+		left: 100px;
+		width: 85px;
+		height: 40px;
+		background-color: #79ABF0;
+		text-align:center;
+		top: -29px;
+		border-radius: 3px;
+	}
+	.members-signup a{
+		font-family: Arial sans-serif;
+		font-size: 13px;
+		padding: 3px;
+		color:#FFF;
+		text-decoration: none;
+		top: 11px;
+		position: relative;
+	}
+	.members-signup:hover{
+		background-color: #95C2F8;
+	}
+	.members-signup a:hover{
+		color: #D7D7D7;
+		text-decoration: none;
+	}
+	/* -- START NAVIGATION -- */
+	.nav-mobile-button{
+		background-size: 30px 30px;
+		margin-top: 21px;
+		right: 5px;
+	}
+	.nav-link-wrapper{
+		float: none;
+		right: 0;
+		display: none;
+		width: 100%;
+		position: relative;
+		top:116px;
+		height: 40px;
+	}
+	.nav-link-wrapper ul{display: none;}
+	.nav-link-wrapper ul{
+		display: block;
+		width: 100%;
+		float: none;
+	}
+	.nav-link-wrapper ul li{
+		width: auto;
+		float: none;
+		list-style-type: none;
+	}
+	.nav-link-wrapper ul li a{
+		text-decoration: none;
+		font-size: 15px;
+		font-family: Arial sans-serif;
+	}
+	/*-- START DROP DOWN --*/
+	.nav-link-wrapper ul ul{display: none;}
+	.nav-link-wrapper ul li:hover ul{
+		display: block;
+		width: 150px;
+		background-color: #79ABF0;
+		position: absolute;
+		z-index: 100;
+		top: 20px;
+		border-radius: 7px;
+	}
+	.nav-link-wrapper ul li ul li{
+		list-style-type: none;
+		width: 150px;
+	}
+	.nav-link-wrapper ul li ul li a{
+		color: #FFF;
+		height: 45px;
+		font-size: 12px;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 3px;
+		left: -36px;
+		position: relative;
+		width: 150px;
+	}
+	.nav-link-wrapper ul li ul li a:hover{
+		text-decoration: underline;
+	}
+	.nav-link-text{
+		float:left;
+		top: -26px;
+		position: relative;
+		margin: 9px;
+		text-decoration: none;
+		list-style: none;
+	}
+	.nav-link-text a,
+	.nav-link-text a:link,
+	.nav-link-text a:active,
+	.nav-link-text a:visited{
+		text-decoration: none;
+		font-family: Arial sans-serif;
+		font-size: 15px;
+		color:#000;
+		padding: 0 10px;
+	}
+	.nav-link-text a:hover{
+		text-decoration: underline;
+	}
+	.nav-link-subtext a,
+	.nav-link-subtext a:link,
+	.nav-link-subtext a:active,
+	.nav-link-subtext a:visited{
+		text-decoration: none;
+		font-family: Arial sans-serif;
+		font-size: 13px;
+	}
+	.nav-link-subtext a:hover{
+		text-decoration: underline;
+	}
+} /* --------------     #end Mast Head Properties @ 320 PX	--------------------------------- */

@@ -1,0 +1,26 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent %}
+<div id="cPanPages">
+    <h1> {{ pageTitle }} </h1>
+    <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-4 cpanel-thumb-container">
+            <a href="{{ fanstats }}">
+                <i class="fa fa-pie-chart fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ fanstats }}">FAN STATS</a>
+            </div>
+        </div>
+        <div class="col-sm-4 cpanel-thumb-container">
+            <a href="{{ trackstats }}">
+                <i class="fa fa-line-chart fa-5x" aria-hidden="true" ></i>
+            </a>
+            <div class="cpanel-thumb-label">
+                <a href="{{ trackstats }}">TRAK STATS</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

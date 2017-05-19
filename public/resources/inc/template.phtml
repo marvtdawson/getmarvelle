@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> <?= SITE_NAME ; ?> | <?echo $this->title; ?></title>
+    <?php
+        foreach ($this->stylesheets as $stylesheet){
+            echo '<link href="' . $stylesheet . '" rel="stylesheet" type="type/css" >' . "\n";
+        }
+
+        foreach ($this->javascripts as $javascript){
+            echo '<script src="' . $javascript . '" language="javascript" type="text/javascript"></script>' . "\n";
+        }
+    ?>
+</head>
+<body>
+    <?php echo $this->body; ?>
+</body>
+</html>

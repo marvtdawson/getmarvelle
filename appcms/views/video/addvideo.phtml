@@ -1,0 +1,17 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent  %}
+<div id="cPanPages">
+    <h1>{{ pageTitle }}</h1>
+    <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+    <hr>
+    <div class="row">
+        <form action="{{ processform }}" method="post" class="ajax" enctype="multipart/form-data" name="{{ formName }}">
+
+            <input type="hidden" name="csrf_token" value="{{ csrftoken }}" >
+
+
+            <input type="submit" value="SAVE" class="cpan-forms-submit-button" name="corepages_SubmitBtn" />
+        </form>
+    </div>
+</div>
+{% endblock %}

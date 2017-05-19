@@ -1,0 +1,24 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent  %}
+    <div id="cPanPages">
+        <h1>{{ pageTitle }}</h1>
+        <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+        <hr>
+        <div class="row">
+            <form action="{{ processArtistFlow }}" method="post" class="ajax" name="{{ styleForm }}" >
+                <div class="cpan-input-wrapper">
+                    <h3>ARTIST STYLE</h3>
+                    <div class="form-field-para">You said your flow is more:  {{ artistStyle }}</div>
+                    <label>Redefined your flow: </label>
+                    <select name="artist_style" autofocus class="input-form-fields">
+                        <option value="selected">-- SELECT ONE --</option>
+                        {% for key, style in styles %}
+                            <option value="{{ style }}"> {{ style }} </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <input type="hidden" name="csrf_token" value="{{ csrftoken }}" >
+                <input type="submit" name="{{ artistStyleSubmitButton }}" value="Update Flow" class="cpan-forms-submit-button" />
+            </form>
+        </div><br>
+{% endblock %}

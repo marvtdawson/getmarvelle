@@ -1,0 +1,31 @@
+{% extends "template/layout/appcmscpaneltemplate.phtml" %}
+{% block cpanelcontent  %}
+<div id="cPanPages">
+    <h1> {{ pageTitle }}  </h1 >
+    <div class="breadcrumb-font"><a href="{{ indexpage }}"><< {{ breadcrumb_index }} Home</a></div>
+    <hr>
+        <div class = "main-content-tier1-wrapper" >
+          <table>
+              <tr>
+                  <td class="contact-column">Name</td>
+                  <td class="contact-column">Email </td>
+                  <td class="contact-column">State </td>
+                  <td class="contact-column">City </td>
+                  <td class="contact-column">Message </td>
+              </tr>
+              <tr>
+                  <td class="contact-row">Sup</td>
+                  <td class="contact-row">Marvo</td>
+                  <td class="contact-row">This should</td>
+                  <td class="contact-row">be done</td>
+                  <td class="contact-row">already damn.</td>
+              </tr>
+              {% for contactmsg in contactMessages %}
+              <tr>
+                  <td id="">{{ contactmsg }}</td>
+              </tr>
+              {% endfor %}
+          </table>
+        </div >
+</div>
+{% endblock %}
