@@ -127,7 +127,7 @@ class Login extends Controller {
 
                 $validate = new Validation();
 
-                echo "Validation is good<br>";
+                //echo "Validation is good<br>";
 
                 $validation = $validate->check($_POST, array(
                     'regMem_E1' => array(
@@ -142,7 +142,7 @@ class Login extends Controller {
                     )
                 ));
 
-                echo 'Data from form is present<br>';
+                //echo 'Data from form is present<br>';
 
                 if ($validation->passed()) {
 
@@ -150,13 +150,13 @@ class Login extends Controller {
 
                     $remember = (Input::get('regRemember') === 'on') ? true : false;
 
-                    echo 'Sending Data to User class<br>';
+                    //echo 'Sending Data to User class<br>';
 
                     $login = $this->user->login(Input::get('regMem_E1'), Input::get('regMem_Pw'), $remember);
 
                     if($login){
 
-                        echo 'Found login data<br>';
+                        //echo 'Found login data<br>';
 
                         $this->getMemberActivationStatus = $this->user->data()->regMem_Account;
 

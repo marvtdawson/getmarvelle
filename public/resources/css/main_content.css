@@ -197,6 +197,40 @@ body{
 		display: block; /* Display block instead of inline */
 		transition: 0.3s; /* Transition effects on hover (color) */
 	}
+	.cycle-slideshow{
+		margin: 0 auto 0;
+		width: 800px;
+	}
+	.cycle-slideshow-img{
+		width: 125px;
+		height: 125px;
+		margin-left: 5px;
+	}
+	.home-page-thumb-image-wrapper{
+		width: 1050px;
+		height: 200px;
+		float: left;
+		display: inline;
+	}
+	.artist-projects-thumb-slider{
+		width: 75%;
+		margin: 15px auto 35px;
+	}
+	.artist-projects-thumb-slider-prev-button{
+		width: 75px;
+		float: left;
+		display: inline;
+		text-align: center;
+	}
+	.artist-projects-thumb-slider-next-button{
+		width: 75px;
+		float: right;
+		display: inline;
+		text-align: center;
+	}
+	.home-page-ad-banner{
+		margin: 10px auto 10px;
+	}
 }
 
 @media(max-width:1700px) {

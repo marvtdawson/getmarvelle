@@ -36,7 +36,7 @@ const COOKIE_EXPIRY = 300000; // cookies expiry in 5 minutes
 
 ################### MEMBER PROFILE IMAGES ####################
 const MEMBER_PROFILE_BILLBOARD_IMAGE = '/assets/images/memberprofile/billboard/default.jpg';
-const MEMBER_PROFILE_THUMB_PROFILE_IMAGE = '/assets/images/memberprofile/thumb/default.jpg';
+const MEMBER_PROFILE_THUMB_PROFILE_IMAGE = '/m3Mb3rz/4/images/thumbs/default.jpg';
 
 #################### PUBLIC FORMS #############################
 
@@ -107,7 +107,7 @@ const APP_CMS_MUSIC_INDEX = '/appcms/music/index';
 const APP_CMS_ADD_CD_PROCESS = '/appcms/music/addcd/process';
 const APP_CMS_ADD_CD_PRETTY_URI = '/appcms/music/addcd';
 const APP_CMS_ADD_MUSIC_PROCESS = '/appcms/music/add/process';
-const APP_CMS_ADD_MUSIC_PRETTY_URI = '/appcms/music/add';
+const APP_CMS_ADD_MUSIC_PRETTY_URI = '/appcms/music/addtrack';
 const APP_CMS_EDIT_MUSIC_PROCESS = '/appcms/music/edit/process';
 const APP_CMS_EDIT_MUSIC_PRETTY_URI = '/appcms/music/edit';
 const APP_CMS_DELETE_MUSIC_PROCESS = '/appcms/music/delete/process';

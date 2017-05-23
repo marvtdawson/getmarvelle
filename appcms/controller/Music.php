@@ -17,23 +17,37 @@ use PDOException;
 //use library\Controller\Redirect;
 use Library\Controller\Styles;
 use Library\CSRF\CSRF;
+use library\Models\Model;
 use library\Models\SiteKeyWordsModel;
 
 class Music extends Controller
 {
+    private $_db;
+
     public $username,
         $userId,
         $curruserInfo,
         $currUser,
         $validate,
         $userLogin,
-        $musicTempName,
-        $musicOrigName,
         $fields,
-        $musicFile,
+        $media_type,
+        $cdCoverFile,
+        $cdCoverFileExt,
+        $tempName,
+        $origName,
+        $trakFile,
         $musicFileExt,
+        $checkImage,
+        $checkTrak,
         $checkMusicType,
         $musicDir,
+        $memberAssetsDir,
+        $memberMediaDir,
+        $memberMusicDir,
+        $memberMusicProjects,
+        $memberMusicThumbs,
+        $artistProjects,
         $extension,
         $musicTracks = array(),
         $gallery,
@@ -49,6 +63,9 @@ class Music extends Controller
     public function __construct(array $route_params)
     {
         parent::__construct($route_params);
+
+        // connect to db
+        $this->_db = Model::getInstance();
     }
 
     /**
@@ -113,46 +130,178 @@ class Music extends Controller
             'username' =>  $this->username
         ],  'appcms/views');
 
-        // add slide
-        // update user data
-        // check if the input data via post or get method existt
+        // check if the input data via post or get method exist
         if(Input::exists()) {
 
             // get input field csrf_token and check if it exist
             //if(CSRF::check(Input::get('csrf_token'))) {
 
-            $memberBaseDir = '../m3Mb3rz/';
-            $memberMediaDir = 'media/';
-            $memberMusicDir = 'music/';
+                    $this->memberAssetsDir = '../public/assets/m3Mb3rz/' . $this->userId . '/';
+                    $this->memberMediaDir = 'media/';
+                    $this->memberMusicDir = 'music/';
+                    $this->memberMusicProjects = 'projects/';
+                    $this->memberMusicThumbs = 'thumbs/';
 
-            $this->musicFile = $this->slide_dir . basename($_FILES["uploadTrak"]["name"]);
-            //echo $this->slideFile . '<br >';
+                    $this->artistProjects = $this->memberAssetsDir .
+                        $this->memberMediaDir .
+                        $this->memberMusicDir .
+                        $this->memberMusicProjects . '/';
 
-            $this->musicFileExt = pathinfo($this->musicFile, PATHINFO_EXTENSION);
-            //echo 'This file ext is: ' . $this->slideFileExt . '<br >';
+                    $this->cdCoverFile = $this->memberAssetsDir .
+                                         $this->memberMediaDir .
+                                         $this->memberMusicDir .
+                                         $this->memberMusicProjects .
+                                         $this->memberMusicThumbs . basename($_FILES["uploadCdCover"]["name"]);
 
-            $this->checkMusicType = mime_content_type($_FILES["uploadTrak"]["tmp_name"]);
+                    //echo 'This file will load to: ' . $this->cdCoverFile . '<br >';
+
+                    $this->cdCoverFileExt = pathinfo($this->cdCoverFile, PATHINFO_EXTENSION);
+                    //echo 'This file ext is: ' . $this->cdCoverFileExt . '<br >';
+
+                    $this->checkImage = mime_content_type($_FILES["uploadCdCover"]["tmp_name"]);
+                    //echo 'This image type is: ' . $this->checkImage . '<br >';
+
+                    // 1. check if image being upload is the right formatted mime type / image
+                    if( $this->checkImage !== 'image/jpeg' ||
+                        $this->checkImage !== 'image/JPEG' ||
+                        $this->checkImage !== 'image/png'){
+
+                        // redirect or display modal
+                        //echo "Wrong file type was attempted to upload<br>";
+                        $this->uploadOk = 0;
+                    }
+
+                    // 2. check if file already exists
+                    if (file_exists($this->cdCoverFile)) {
+                        echo "Sorry, file already exists.<br>";
+                        $this->uploadOk = 0;
+                    }
+
+                    // 3. file size
+                    if ($_FILES["uploadCdCover"]["size"] > 500000) {
+                        echo "Sorry, your file is too large.<br>";
+                        $this->uploadOk = 0;
+                    }
+
+                    // 4. check file extension
+                    /*if($this->slideFileExt){
+                        if($this->slideFileExt !== 'jpg'){
+                            echo 'This is not a jpg. <br>';
+                        }
+                        if($this->slideFileExt !== 'jpeg'){
+                            echo 'This is not a jpeg. <br>';
+                        }
+                        if($this->slideFileExt !== 'JPEG'){
+                            echo 'This is not a JPEG. <br>';
+                        }
+                        if($this->slideFileExt !== 'png'){
+                            echo 'This is not a PNG. <br>';
+                        }
+                        if($this->slideFileExt !== 'gif'){
+                            echo 'This is not a GiF. <br>';
+                        }
+                      }*/
+
+                    // 5. move file to upload
+                    if($this->uploadOk === 1){
+                        echo "Sorry, your file was not uploaded.";
+                    }elseif($this->uploadOk === 0){
+
+                        if (move_uploaded_file($_FILES["uploadCdCover"]["tmp_name"], $this->cdCoverFile)) {
+
+                            $this->media_type = 'Audio';
+
+                            // set vars for slide names
+                            $this->tempName =  $_FILES["uploadCdCover"]["tmp_name"];
+                            $this->origName =  $_FILES["uploadCdCover"]["name"];
+
+                            try {
+                                $this->_db->insert($this->_tableName, array(  // update user member profile in table
+                                    'regMem_Id' => $this->userId,
+                                    'media_type' => $this->media_type,
+                                    'project_name' => Input::get('cdName'),
+                                    'media_Tmp_Name' => $this->tempName,
+                                    'media_Orig_Name' => $this->origName,
+                                    'media_day' => date('M'),
+                                    'media_month' => date('d'),
+                                    'media_year' => date('Y'),
+                                ));
+                                //echo "The file ". basename( $_FILES["upload_slide_image"]["name"]). " has been uploaded.";
+                                mkdir($this->artistProjects . Input::get('cdName'), 777);
+                            }
+                            catch (PDOException $e) {
+                                die($e->getMessage());
+                            }
+                        } else {
+                            echo "Sorry, there was an error uploading your file.";
+                        }
+                    }
+            //} // csrf token exists
+        }
+    }
+
+
+    public function addtrackAction()
+    {
+        View::renderTemplate('music/addmusic.phtml', [
+            'tabtitle' => 'Add musiQ',
+            'pageTitle' => 'Add musiQ',
+            'siteName' => $this->siteName,
+            'siteKeywords' => $this->siteKeywords,
+            'processForm' => Config::APP_CMS_ADD_MUSIC_PRETTY_URI,
+            'breadcrumb_index' => 'musiQ',
+            'indexpage' => Config::APP_CMS_MUSIC_INDEX,
+            'cpanelindexpage' => Config::APP_CMS_CPANEL_INDEX_PRETTY_URI,
+            'username' =>  $this->username,
+            'styles' => Styles::styleType(),
+        ],  'appcms/views');
+
+        // check if the input data via post or get method exist
+        if(Input::exists()) {
+
+            // get input field csrf_token and check if it exist
+            //if(CSRF::check(Input::get('csrf_token'))) {
+
+            $this->memberAssetsDir = '../public/assets/m3Mb3rz/' . $this->userId . '/';
+            $this->memberMediaDir = 'media/';
+            $this->memberMusicDir = 'music/';
+            $this->memberMusicProjects = 'projects/';
+            $this->memberMusicThumbs = 'thumbs/';
+
+            $this->artistProjects = $this->memberAssetsDir .
+                $this->memberMediaDir .
+                $this->memberMusicDir .
+                $this->memberMusicProjects . '/';
+
+            $this->trakFile = $this->memberAssetsDir .
+                $this->memberMediaDir .
+                $this->memberMusicDir .
+                $this->memberMusicProjects . basename($_FILES["uploadTrak"]["name"]);
+
+            //echo 'This file will load to: ' . $this->cdCoverFile . '<br >';
+
+            $this->trakFileExt = pathinfo($this->trakFile, PATHINFO_EXTENSION);
+            //echo 'This file ext is: ' . $this->cdCoverFileExt . '<br >';
+
+            $this->checkTrak = mime_content_type($_FILES["uploadTrak"]["tmp_name"]);
             //echo 'This image type is: ' . $this->checkImage . '<br >';
 
             // 1. check if image being upload is the right formatted mime type / image
-            if($this->checkMusicType !== 'image/mp3' ||
-                $this->checkMusicType !== 'image/jpeg' ||
-                $this->checkMusicType !== 'image/JPEG' ||
-                $this->checkMusicType !== 'image/png' ||
-                $this->checkMusicType !== 'image/gif'){
+            if( $this->checkTrak !== 'audio/mp3' || $this->checkTrak !== 'audio/ogg'){
+
                 // redirect or display modal
                 //echo "Wrong file type was attempted to upload<br>";
                 $this->uploadOk = 0;
             }
 
             // 2. check if file already exists
-            if (file_exists($this->musicFile)) {
+            if (file_exists($this->trakFile)) {
                 echo "Sorry, file already exists.<br>";
                 $this->uploadOk = 0;
             }
 
             // 3. file size
-            if ($_FILES["upload_trak"]["size"] > 500000) {
+            if ($_FILES["uploadTrak"]["size"] > 500000) {
                 echo "Sorry, your file is too large.<br>";
                 $this->uploadOk = 0;
             }
@@ -181,20 +330,25 @@ class Music extends Controller
                 echo "Sorry, your file was not uploaded.";
             }elseif($this->uploadOk === 0){
 
-                if (move_uploaded_file($_FILES["uploadTrak"]["tmp_name"], $this->musicFile)) {
+                if (move_uploaded_file($_FILES["uploadTrak"]["tmp_name"], $this->trakFile)) {
+
+                    $this->media_type = 'Audio';
 
                     // set vars for slide names
-                    $this->musicTempName =  $_FILES["uploadTrak"]["tmp_name"];
-                    $this->musicOrigName =  $_FILES["uploadTrak"]["name"];
+                    $this->tempName =  $_FILES["uploadTrak"]["tmp_name"];
+                    $this->origName =  $_FILES["uploadTrak"]["name"];
 
                     try {
-                        $this->_db->insert($this->_tableName, array(  // update user memberprofile in table
-                            'hgm_Member_Id' => $this->userId,
-                            'slide_Tmp_Name' => $this->musicTempName,
-                            'slide_Orig_Name' => $this->musicOrigName,
-                            'slide_Date' => date('M d, Y'),
+                        $this->_db->insert($this->_tableName, array(  // update user member profile in table
+                            'regMem_Id' => $this->userId,
+                            'media_type' => $this->media_type,
+                            'project_name' => Input::get('uploadTrak'),
+                            'media_Tmp_Name' => $this->tempName,
+                            'media_Orig_Name' => $this->origName,
+                            'media_day' => date('M'),
+                            'media_month' => date('d'),
+                            'media_year' => date('Y'),
                         ));
-                        //echo "The file ". basename( $_FILES["upload_slide_image"]["name"]). " has been uploaded.";
                     }
                     catch (PDOException $e) {
                         die($e->getMessage());
@@ -205,119 +359,6 @@ class Music extends Controller
             }
             //} // csrf token exists
         }
-    }
-
-
-    public function addAction()
-    {
-        View::renderTemplate('music/addmusic.phtml', [
-            'tabtitle' => 'Add musiQ',
-            'pageTitle' => 'Add musiQ',
-            'siteName' => $this->siteName,
-            'siteKeywords' => $this->siteKeywords,
-            'processForm' => Config::APP_CMS_ADD_MUSIC_PRETTY_URI,
-            'breadcrumb_index' => 'musiQ',
-            'indexpage' => Config::APP_CMS_MUSIC_INDEX,
-            'cpanelindexpage' => Config::APP_CMS_CPANEL_INDEX_PRETTY_URI,
-            'username' =>  $this->username,
-            'styles' => Styles::styleType(),
-        ],  'appcms/views');
-
-        // add slide
-        // update user data
-        // check if the input data via post or get method existt
-        if(Input::exists()) {
-
-            // get input field csrf_token and check if it exist
-            if(CSRF::check(Input::get('csrf_token'))) {
-
-                $memberBaseDir = '../m3Mb3rz/';
-                $memberBaseId = $this->userId .'/';
-                $memberMediaDir = 'media/';
-                $memberMusicDir = 'music/';
-
-                $this->musicDir =  $memberBaseDir . $memberBaseId  . $memberMediaDir . $memberMusicDir;
-                echo $this->musicDir;
-
-                $this->musicFile = $this->musicDir . basename($_FILES["uploadTrak"]["name"]);
-                //echo $this->slideFile . '<br >';
-
-                $this->musicFileExt = pathinfo($this->musicFile, PATHINFO_EXTENSION);
-                //echo 'This file ext is: ' . $this->slideFileExt . '<br >';
-
-                $this->checkMusicType = mime_content_type($_FILES["uploadTrak"]["tmp_name"]);
-                //echo 'This image type is: ' . $this->checkImage . '<br >';
-
-                // 1. check if image being upload is the right formatted mime type / image
-                if($this->checkMusicType !== 'image/mp3' ||
-                    $this->checkMusicType !== 'image/jpeg' ||
-                    $this->checkMusicType !== 'image/JPEG' ||
-                    $this->checkMusicType !== 'image/png' ||
-                    $this->checkMusicType !== 'image/gif'){
-                    // redirect or display modal
-                    //echo "Wrong file type was attempted to upload<br>";
-                    $this->uploadOk = 0;
-                }
-
-                // 2. check if file already exists
-                if (file_exists($this->musicFile)) {
-                    echo "Sorry, file already exists.<br>";
-                    $this->uploadOk = 0;
-                }
-
-                // 3. file size
-                if ($_FILES["upload_trak"]["size"] > 500000) {
-                    echo "Sorry, your file is too large.<br>";
-                    $this->uploadOk = 0;
-                }
-
-                // 4. check file extension
-                /*if($this->slideFileExt){
-                    if($this->slideFileExt !== 'jpg'){
-                        echo 'This is not a jpg. <br>';
-                    }
-                    if($this->slideFileExt !== 'jpeg'){
-                        echo 'This is not a jpeg. <br>';
-                    }
-                    if($this->slideFileExt !== 'JPEG'){
-                        echo 'This is not a JPEG. <br>';
-                    }
-                    if($this->slideFileExt !== 'png'){
-                        echo 'This is not a PNG. <br>';
-                    }
-                    if($this->slideFileExt !== 'gif'){
-                        echo 'This is not a GiF. <br>';
-                    }
-                  }*/
-
-                // 5. move file to upload
-                if($this->uploadOk === 1){
-                    echo "Sorry, your file was not uploaded.";
-                }elseif($this->uploadOk === 0) {
-
-                    if (move_uploaded_file($_FILES["uploadTrak"]["tmp_name"], $this->musicFile)) {
-
-                        // set vars for slide names
-                        $this->musicTempName = $_FILES["uploadTrak"]["tmp_name"];
-                        $this->musicOrigName = $_FILES["uploadTrak"]["name"];
-
-                        try {
-                            $this->_db->insert($this->_tableName, array(  // update user memberprofile in table
-                                'hgm_Member_Id' => $this->userId,
-                                'slide_Tmp_Name' => $this->musicTempName,
-                                'slide_Orig_Name' => $this->musicOrigName,
-                                'slide_Date' => date('M d, Y'),
-                            ));
-                            //echo "The file ". basename( $_FILES["upload_slide_image"]["name"]). " has been uploaded.";
-                        } catch (PDOException $e) {
-                            die($e->getMessage());
-                        }
-                    } else {
-                        echo "Sorry, there was an error uploading your file.";
-                    }
-                }
-            } // csrf token exists
-        } // if Input
     }
 
     public function editAction()

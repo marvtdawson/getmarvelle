@@ -1,0 +1,1 @@
+added default images to member profile folders for testing

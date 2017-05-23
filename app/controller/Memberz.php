@@ -11,7 +11,7 @@ use core\Controller;
 use Core\Config;
 use library\User\User;
 use library\Controller\Redirect;
-use Exception; use core\View; use library\Models\SiteKeyWordsModel;
+use Exception; use core\View; use library\Models\SiteKeyWordsModel; use appcms\controller\Userprofile;
 
 class Memberz extends Controller
 {
@@ -49,6 +49,10 @@ class Memberz extends Controller
         $this->getSiteKeywords = new SiteKeyWordsModel();
         $this->getSiteKeywords->find($this->keyword_type);
         $this->siteKeywords = $this->getSiteKeywords->data()->pages_Keywords;
+
+        $loggedInUserName = new Userprofile();
+        $this->username = $loggedInUserName->userName;
+        $this->userLogin = $loggedInUserName->checkLoggedInUser();
     }
 
     /**

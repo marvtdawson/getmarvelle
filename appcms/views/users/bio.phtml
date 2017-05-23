@@ -8,7 +8,7 @@
         <div class="tinymce-editor-wrapper">
             <form action="{{ processuploadPageContent }}" method="post"  class="edit-page-editor" name="{{ uploadPageContentFormName }}">
                 <label>Page Editor:  You are editing the {{ pageName }} page </label>
-                <textarea id="edit_bio" name="edit_bio">{{ pageContent }}</textarea>
+                <textarea id="editcorepages" name="edit_bio">{{ pageContent }}</textarea>
                 <input type="hidden" name="csrf_token" value="{{ csrftoken }}" >
                 <input type="submit" value="SAVE" class="corepages-submit-button" name="corepages_SubmitBtn" />
             </form>

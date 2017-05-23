@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="g3tMArv3LL3cOre@localhost" uuid="a40ac012-308a-4aea-954a-f06c3a5f58b8">
+      <database-info product="MySQL" version="5.7.18-0ubuntu0.16.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>*:g3tMArv3LL3cOre</introspection-schemas>
+      <resolve-scope>g3tMArv3LL3cOre:</resolve-scope>
+      <unqualified-resolve-schemas>g3tMArv3LL3cOre:</unqualified-resolve-schemas>
+    </data-source>
+    <data-source name="rad1oHoGoMusZ09@localhost" uuid="2503e6e0-d3f0-49b2-8b59-ef79de15bae0">
+      <database-info product="MySQL" version="5.7.17-0ubuntu0.16.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>*:rad1oHoGoMusZ09</introspection-schemas>
+      <resolve-scope>g3tMArv3LL3cOre:</resolve-scope>
+      <unqualified-resolve-schemas>g3tMArv3LL3cOre:</unqualified-resolve-schemas>
+    </data-source>
+  </component>
+</project>

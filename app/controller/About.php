@@ -5,7 +5,7 @@ use core\Controller;
 use core\View;
 use core\Config;
 use library\Models\CorePagesModel;
-use library\Models\SiteKeyWordsModel;
+use library\Models\SiteKeyWordsModel; use appcms\controller\Userprofile;
 
 class About extends Controller
 {
@@ -43,8 +43,9 @@ class About extends Controller
         $this->getPageContent->find($this->core_page_number);
         $this->siteContent = $this->getPageContent->data()->corePages_Content;
 
-        /* $loggedInUserName = new Userprofile();
-       $this->username = $loggedInUserName->getLoggedInUserInfo();*/
+        $loggedInUserName = new Userprofile();
+        $this->username = $loggedInUserName->userName;
+        $this->userLogin = $loggedInUserName->checkLoggedInUser();
 
     }
 
@@ -68,60 +69,6 @@ class About extends Controller
             'userLogin' => $this->userLogin,
             'pageContent' => $this->siteContent,
         ]);
-
-    }
-
-    public function sassAction()
-    {
-        View::renderTemplate('sass.phtml', [
-            'tabTitle' => 'SASS',
-            'pageTitle' => 'SASS',
-            'siteName' => $this->siteName,
-            'siteKeywords' => $this->siteKeywords,
-            'pageDescription' => 'SASS',
-            'username' =>  $this->username,
-            'userLogin' => $this->userLogin,
-            'pageContent' => $this->siteContent,
-            'param_sum' => $this->xorBitwise(),
-            'looping' => $this->looping(),
-            'loopingArrays' => $this->loopingArrays(),
-        ]);
-    }
-
-    function xorBitwise()
-    {
-        $param1 = 5;
-        $param2 = 10;
-        $sum = '';
-        $sum = $param1 ^ $param2;
-        return $sum;
-    }
-
-    public function looping()
-    {
-        $a = 455;
-        $b = $a;
-
-        for($b = 460; $b < $a; $b++){
-            echo $b . '<br>';
-        }
-
-    }
-
-    public function loopingArrays()
-    {
-        $first_names = array('a' => 'Marvin', 'b' => 'Tosha', 'c' => 'Princess', 'e'=>'Thomas');
-        $last_names = array('a' => 'Marvin', 'b' => 'Tosha', 'c' => 'Princess', 'd' => 'Thomas');
-
-
-       /* foreach($first_names as $value){
-            echo $value . '<br>';
-        }*/
-
-       $result = array_intersect_assoc($first_names, $last_names);
-
-        print_r($result);
-
     }
 
 }

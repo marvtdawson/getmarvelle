@@ -1,0 +1,11 @@
+LaunchURL=http\://server/folder
+Save\ Mode=ON_SAVE
+SelectedHostGUID=1faf86d9-a847-46cd-ad68-845b09830002
+UploadFolder=/hgdllc.com
+eclipse.preferences.version=1
+exclusionPatterns=
+inclusionPatterns=
+isLocalProjectEnabled=false
+isRemoteProjectEnabled=true
+isUploadEnabled=true
+localUploadFolder=/

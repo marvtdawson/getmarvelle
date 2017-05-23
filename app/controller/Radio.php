@@ -12,6 +12,7 @@ use core\Controller;
 use core\View;
 use library\Models\CorePagesModel;
 use library\Models\SiteKeyWordsModel;
+use appcms\controller\Userprofile;
 
 
 
@@ -46,6 +47,10 @@ class Radio extends Controller
         $this->getPageContent = new CorePagesModel();
         $this->getPageContent->find($this->core_page_number);
         $this->siteContent = $this->getPageContent->data()->corePages_Content;
+
+        $loggedInUserName = new Userprofile();
+        $this->username = $loggedInUserName->userName;
+        $this->userLogin = $loggedInUserName->checkLoggedInUser();
     }
 
     /**

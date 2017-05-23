@@ -121,13 +121,15 @@
 
     /* ############### LOGIN FORM #######################  */
 
-    /*$('#regMem_E1').bind('mouseleave', function (){
+    /* c
 
-        var showGif = setInterval(2000);
-        $("#gif-div").html('<img src="../../assets/images/miniLoader.gif" class="gif-div-image">').show(showGif);
+        alert('Mouse Just Left the Input Field');
 
-         var pageNumber = $(this).val();
-         var url = '/appcms/corepages/getSelectedValue?corepagenumber=' + pageNumber;
+        //var showGif = setInterval(2000);
+        //$("#gif-div").html('<img src="../../assets/images/miniLoader.gif" class="gif-div-image">').show(showGif);
+
+        //var pageNumber = $(this).val();
+        //var url = '/appcms/corepages/getSelectedValue?corepagenumber=' + pageNumber;
 
 
 
@@ -154,4 +156,7 @@
              //location.reload('/appcms/corepages/index');
              return false;
          }
+
+
+
     });*/

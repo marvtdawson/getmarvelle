@@ -445,7 +445,6 @@ class Users extends Controller
     public function artistbio()
     {
 
-
         View::renderTemplate('users/bio.phtml', [
             'csrftoken' => CSRF::generatetoken(),
             'tabtitle' => 'Artist Bio',

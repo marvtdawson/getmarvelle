@@ -3,11 +3,9 @@
 
 
 $(document).ready(function(){
-	
 
-
-    var videoVolume = document.getElementById('video_wrapper');
-    videoVolume.volume = 0.4;
+    /*var videoVolume = document.getElementById('video_wrapper');
+    videoVolume.volume = 0.4;*/
 	
   // jQuery Accordion Function
  /* $(function() {
@@ -119,30 +117,6 @@ $(document).ready(function(){
             $(".form-preview").html(data).show();
         });
     }
-
-
-    $('form.ajax').on('submit', function(){
-        var that = $(this),
-            url = that.attr('action'),
-            type = that.attr('method'),
-            data = {};
-
-        that.find('[name]').each(function(index, value){
-            var that = $(this),
-                name = that.attr('name'),
-                value = that.val();
-            data[name] = value;
-        });
-
-        $.ajax({
-            url: url,
-            type: type,
-            data: data,
-            success : function(response){
-                console.log(response);
-            }
-        });
-    });
 
 
     /* #################### START CMS FORMS VALIDATION ########################## */

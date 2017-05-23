@@ -10,14 +10,14 @@ namespace appcms\controller;
 use core\Config;
 use core\Controller;
 use core\View;
-use library\User\User;
 use library\Models\SiteKeyWordsModel;
+/*use library\User\User;
 use Library\CSRF\CSRF;
 use Library\Controller\United_States;
 use library\Form\Validation;
 use library\Form\Input;
 use library\Controller\Redirect;
-use Exception;
+use Exception;*/
 
 
 class Profile extends Controller
@@ -63,8 +63,8 @@ class Profile extends Controller
         $this->username = $loggedInUserName->getLoggedInUserInfo()->regMem_Name;
         $this->userId =  $loggedInUserName->getLoggedInUserInfo()->id;
 
-        $this->billboard = Config::MEMBER_PROFILE_BILLBOARD_IMAGE;
-        $this->thumbProfile = Config::MEMBER_PROFILE_THUMB_PROFILE_IMAGE;
+        $this->billboard = '../../assets/m3Mb3rz/' . $this->userId . '/images/billboard/default.jpg';
+        $this->thumbProfile = '../../assets/m3Mb3rz/' . $this->userId . '/images/thumbs/default.jpg';
     }
 
     /**

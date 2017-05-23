@@ -101,6 +101,12 @@ class Register extends Controller {
             'pageContent' => $this->siteContent,
             'siteKeywords' => $this->siteKeywords,
         ]);
+
+        // if user is logged in redirect to profile page
+        if($this->username !== ''){
+
+            Redirect::to('/appcms/profile/index');
+        }
     }
 
     public function gotInfo(){
@@ -187,7 +193,7 @@ class Register extends Controller {
                             ));
 
                         $this->getNewUserId = $user->lastId();
-                        $memberBaseDir = '../m3Mb3rz/';
+                        $memberBaseDir = '../public/assets/m3Mb3rz/';
                         $memberMediaDir = 'media/';
                         $memberImageDir = 'images/';
                         $memberImageDirBillboard = 'billboard/';
@@ -216,7 +222,7 @@ class Register extends Controller {
                             // create music directory and sub-folders
                             mkdir($newMemberPath . $memberMediaDir . $memberMusicDir, 0777, true);
                             mkdir($newMemberPath . $memberMediaDir . $memberMusicDir . $memberMusicProjects , 0777, true);
-                            mkdir($newMemberPath . $memberMediaDir . $memberMusicDir . $memberMusicImageThumbnails , 0777, true);
+                            mkdir($newMemberPath . $memberMediaDir . $memberMusicDir . $memberMusicProjects .  $memberMusicImageThumbnails , 0777, true);
 
                             // create video directory
                             mkdir($newMemberPath . $memberMediaDir . $memberVideoDir, 0777, true);

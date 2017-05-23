@@ -358,8 +358,9 @@
 		text-align: center;
 	}
 	.member-profile-thumbnail-image{
-		width: 164px;
-		height: 164px;
+		width: 165px;
+		height: 165px;
+		border-radius: 4px;
 	}
 	.member-profile-thumbnail-text{
 		font-size: 12px;
@@ -374,10 +375,8 @@
 	.profile-edit-bar-content {
 		width: 765px;
 		height: 45px;
-		margin: 0 0 0 365px;
+		margin: 0 0 0 500px;
 		position: relative;
-		/*border: 1px solid black;*/
-
 	}
 	.profile-edit-setting{
 		width: 20%;
@@ -390,13 +389,13 @@
 	}
 	.member-profile-widget-container{
 		width: 300px;
-		margin: 5px 0 0 5px;
+		margin: 15px 0 0 5px;
 		float: left;
 	}
 	.member-profile-content{
 		width: 890px;
 		height: 100px;
-		margin: 5px 0 0 0;
+		margin: 15px 0 0 0;
 		float: right;
 	}
 	.twitter-widget{

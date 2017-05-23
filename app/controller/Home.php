@@ -6,6 +6,8 @@ use core\Controller;
 use core\View;
 use library\Sessions\Sessions;
 use library\CSRF\CSRF;
+use appcms\controller\Userprofile;
+use library\Controller\Redirect;
 
 class Home extends Controller  {
 
@@ -24,9 +26,9 @@ class Home extends Controller  {
     {
         $this->siteName = parent::getSiteName();
 
-        /*$loggedInUserName = new Userprofile();
+        $loggedInUserName = new Userprofile();
         $this->username = $loggedInUserName->userName;
-        $this->userLogin = $loggedInUserName->checkLoggedInUser();*/
+        $this->userLogin = $loggedInUserName->checkLoggedInUser();
     }
 
     /**
@@ -64,8 +66,6 @@ class Home extends Controller  {
     public function getSlideShowImages(){
 
         $this->getImages = new Slideshow();
-
-
 
     }
 
