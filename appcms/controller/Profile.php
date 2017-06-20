@@ -36,9 +36,10 @@ class Profile extends Controller
         $entry,
         $formEntry,
         $billboard,
-        $thumbProfile;
-
-
+        $thumbProfile,
+        $parentUrl,
+        $hgmDomain,
+        $hgmRelPath;
 
     public function __construct()
     {
@@ -65,6 +66,10 @@ class Profile extends Controller
 
         $this->billboard = '../../assets/m3Mb3rz/' . $this->userId . '/images/billboard/default.jpg';
         $this->thumbProfile = '../../assets/m3Mb3rz/' . $this->userId . '/images/thumbs/default.jpg';
+
+        $this->hgmDomain = getenv('HTTP_HOST');
+        $this->hgmRelPath = $this->hgmDomain;
+        //$this->parentUrl = '../public_html/';
     }
 
     /**
@@ -93,7 +98,8 @@ class Profile extends Controller
             'username' =>  $this->username,
             'userLogin' => $this->userLogin,
             'billboard' => $this->billboard,
-            'thumbProfile' => $this->thumbProfile
+            'thumbProfile' => $this->thumbProfile,
+            'siteUrl' => $this->hgmRelPath,
         ]);
     }
 

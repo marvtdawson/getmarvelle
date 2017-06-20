@@ -2,7 +2,7 @@
 {% block maincontent %}
     <div class="standard-form-wrapper">
         <!-- Start Form wrapper -->
-        <form method="post" action="{{ processFormed }}" name="{{ formName }}" onsubmit="return validateLoginForm()">
+        <form method="post" action="{{ processForm }}" name="{{ formName }}" onsubmit="return validateLoginForm()">
 
             <input type="hidden" name="csrf_token" value="{{ csrftoken }}" >
 
@@ -38,7 +38,7 @@
 <div class="form-content-left-div"> {{ pageContent }} </div>
 <div id="form-dialog" title="Login Error"></div>
 <script>
-    function validateLoginForm() {
+    /*function validateLoginForm() {
         var loel = $("#regMem_E1");
         var lopw = $("#regMem_Pw");
 
@@ -50,6 +50,6 @@
             $("#form-dialog").dialog().text('Please enter a password.');
             return false;
         }
-    }
+    }*/
 </script>
 {% endblock %}

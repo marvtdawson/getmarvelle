@@ -26,8 +26,11 @@ interface IConnect2Db
     const CLIENTUSER = "root";
     const CLIENTPW = "TayTay@1972";
 
-    //
+    // testing db
     const CLIENTDB = "g3tMArv3LL3cOre";
+
+    // production db
+    //const CLIENTDB = "rad1oHoGoMuZ09";
 
 }
 

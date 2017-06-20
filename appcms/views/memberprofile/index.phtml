@@ -12,6 +12,9 @@
         <div class="member-profile-thumbnail-wrapper">
             <a href="#">
                 <img class="member-profile-thumbnail-image" src="{{ thumbProfile }}">
+                <div class="inner-thumb-image-form">
+                    <i class="fa fa-camera fa-1x" aria-hidden="true" ></i>
+                </div>
             </a>
             <div class="member-profile-thumbnail-text">@{{ username }}</div>
         </div>
@@ -81,6 +84,6 @@
             </script>
         </div>
     </div>
-    <div class="member-profile-content"></div>
+    <div class="member-profile-content">{{ siteUrl }}</div>
 </div>
 {% endblock %}

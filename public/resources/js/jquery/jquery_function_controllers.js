@@ -11,10 +11,7 @@ $(document).ready(function(){
  /* $(function() {
      $(".mast-head-menu-button-wrapper").accordion();
   });*/
-
-    /*var videoVolume = document.getElementById('video_wrapper');
-    videoVolume.volume = 0;*/
-
+  
     // Slide Menu
     $(".cpanel-leftmenu-button").click(function(){
       $("#cpanel-menu").slideToggle("slow", function(){

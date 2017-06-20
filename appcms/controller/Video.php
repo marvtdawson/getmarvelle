@@ -87,6 +87,13 @@ class Video extends Controller
             'cpanelindexpage' => Config::APP_CMS_CPANEL_INDEX_PRETTY_URI,
             'username' =>  $this->username
         ],  'appcms/views');
+
+        $html = '';
+        $url = '';
+
+        //http://gdata.youtube.com/feeds/api/users/username/uploads
+
+        echo $html;
     }
 
     public function editAction()

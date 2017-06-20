@@ -292,6 +292,17 @@
 		padding: 5px;
 		box-shadow: 2px 2px 2px #545454;
 	}
+	.inner-thumb-image-form{
+		height: 20px;
+		background-color: #545454;
+		margin: -22px auto 0;
+		position: relative;
+		z-index: 10;
+		width: 98%;
+	}
+	.inner-thumb-image-form:hover{
+		color: #ffffff;
+	}
 	.corepages-submit-button{
 		margin-top: 10px;
 		border-radius: 5px;
