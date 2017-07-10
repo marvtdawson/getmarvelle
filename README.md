@@ -1,4 +1,4 @@
-This is the Ladder theme from getMarvelle.com
+This is the core template / theme that serves as a the base template for all other templates being designed using getMarvelle.com
 
 ## getMarvelle.com
 getMarvelle was created by Marvin Dawson, PHP Software Engineer, on March 1, 2017.
