@@ -1,7 +1,7 @@
 <?php
 
 $kony= "";
-$kony_sql = "CREATE DB rad1oHoGoMusZ09";
+$kony_sql = "CREATE DB g3tMArv3LL3cOre";
 
 // check connection
 if($kony->connect_error){

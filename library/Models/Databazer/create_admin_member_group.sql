@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `admin_member_group` (
 --
 
 INSERT INTO `groups` (`id`, `name`, `permissions`) VALUES
-(1, 'Standard_user', ''),
+(1, 'Standard_User', ''),
 (2, 'Administrator', '{"admin": 1}');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
