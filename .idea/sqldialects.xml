@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/library/Models/Databazer/create_conTactForm_table.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/library/Models/Databazer/create_core_pages_table.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/library/Models/Databazer/create_grOup_P3rmi55iOnsz_table.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/library/Models/Databazer/create_keywords_table.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/library/Models/Databazer/create_register_members_table.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/library/Models/Databazer/create_su6scri63_table.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/library/Models/Databazer/create_us3rz_S3ssIoN_table.sql" dialect="MySQL" />
