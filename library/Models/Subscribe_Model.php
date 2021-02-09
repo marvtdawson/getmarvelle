@@ -7,7 +7,7 @@
  */
 
 namespace library\Models;
-use library\Models\Model;
+use Library\Models\Model;
 use core\Config;
 use Exception;
 

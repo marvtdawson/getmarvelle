@@ -4,8 +4,8 @@ use core\Config;
 use core\Controller;
 use core\View;
 use AppCMS\Controller\Userprofile;
-use library\Models\CorePagesModel;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\CorePagesModel;
+use Library\Models\SiteKeyWordsModel;
 
 
 class Services extends Controller 

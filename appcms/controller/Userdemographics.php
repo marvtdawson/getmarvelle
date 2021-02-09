@@ -7,7 +7,7 @@
  */
 
 namespace appcms\controller;
-use library\Models\Model;
+use Library\Models\Model;
 use Exception;
 
 class Userdemographics

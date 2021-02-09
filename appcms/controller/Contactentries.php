@@ -10,9 +10,9 @@ namespace AppCMS\Controller;
 use core\Config;
 use core\Controller;
 use core\View;
-use library\Models\ContactModel;
+use Library\Models\ContactModel;
 //use appcms\controller\Userprofile;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\SiteKeyWordsModel;
 
 
 class Contactentries extends Controller

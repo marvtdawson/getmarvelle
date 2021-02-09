@@ -13,7 +13,7 @@ namespace App\Controller;
 use core\Config;
 use core\Controller;
 use core\View;
-use library\Models\ContactModel;
+use Library\Models\ContactModel;
 //use library\Error;
 use library\Form\Validation;
 use library\Form\Input;
@@ -22,8 +22,8 @@ use library\Controller\United_States;
 use library\Controller\Redirect;
 use Exception;
 use appcms\controller\Userprofile;
-use library\Models\CorePagesModel;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\CorePagesModel;
+use Library\Models\SiteKeyWordsModel;
 
 class Contact extends Controller
 {

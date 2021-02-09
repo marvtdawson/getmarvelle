@@ -9,7 +9,7 @@
 namespace library\Form;
 
 use library\Error\ErrorHandler;
-use library\Models\Model;
+use Library\Models\Model;
 
 
 class Validation

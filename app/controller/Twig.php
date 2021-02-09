@@ -10,8 +10,8 @@ namespace app\controller;
 use core\Controller;
 use core\View;
 use Core\Config;
-use library\Models\CorePagesModel;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\CorePagesModel;
+use Library\Models\SiteKeyWordsModel;
 
 class Twig extends Controller
 {

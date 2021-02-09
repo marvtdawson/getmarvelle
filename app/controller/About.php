@@ -4,8 +4,8 @@ namespace App\Controller;
 use core\Controller;
 use core\View;
 use core\Config;
-use library\Models\CorePagesModel;
-use library\Models\SiteKeyWordsModel; use appcms\controller\Userprofile;
+use Library\Models\CorePagesModel;
+use Library\Models\SiteKeyWordsModel; use appcms\controller\Userprofile;
 
 class About extends Controller
 {

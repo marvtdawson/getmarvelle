@@ -7,7 +7,7 @@
  */
 
 namespace library\User;
-use library\Models\Model;
+use Library\Models\Model;
 use library\Sessions\Sessions;
 use library\Controller\Hash;
 use core\Config;

@@ -10,7 +10,7 @@ namespace appcms\controller;
 use core\Config;
 use core\Controller;
 use core\View;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\SiteKeyWordsModel;
 /*use library\User\User;
 use Library\CSRF\CSRF;
 use Library\Controller\United_States;

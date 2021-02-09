@@ -15,8 +15,8 @@ use library\CSRF\CSRF;
 use library\Form\Validation;
 use library\Form\Input;
 use Exception;
-use library\Models\CorePagesModel;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\CorePagesModel;
+use Library\Models\SiteKeyWordsModel;
 use Library\User\User;
 
 

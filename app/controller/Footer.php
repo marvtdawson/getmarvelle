@@ -14,6 +14,7 @@ use core\View;
 class Footer extends Controller
 {
     public static $site_name;
+    public static $site_name_cms;
 
     /*public function __construct(){}*/
 
@@ -32,20 +33,19 @@ class Footer extends Controller
     protected function after(){}
 
 
-    public static function getfooterlinks()
+    public static function getFooterLinks(): string
     {
         self::$site_name = Config::SITE_NAME;
+        self::$site_name_cms = Config::SITE_NAME_CMS;
         return self::$site_name;
     }
-
 
     public function indexAction()
     {
         //render variable values to Twig template variables
         View::renderTemplate('template/layout/footer.phtml', [
-            'siteName' => Config::SITE_NAME
+            'siteName' => Config::SITE_NAME,
+            'siteNameCMS' => Config::SITE_NAME_CMS
         ]);
-
     }
-
 }

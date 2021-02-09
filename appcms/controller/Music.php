@@ -17,8 +17,8 @@ use PDOException;
 //use library\Controller\Redirect;
 use Library\Controller\Styles;
 use Library\CSRF\CSRF;
-use library\Models\Model;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\Model;
+use Library\Models\SiteKeyWordsModel;
 
 class Music extends Controller
 {
