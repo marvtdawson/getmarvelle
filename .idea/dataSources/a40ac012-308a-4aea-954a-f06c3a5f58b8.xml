@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="g3tMArv3LL3cOre@localhost">
+<<<<<<< HEAD
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.20">
     <root id="1">
       <ServerVersion>5.7.33</ServerVersion>
@@ -20,6 +21,11 @@
       <Collation>latin1_swedish_ci</Collation>
     </schema>
     <schema id="6" parent="1" name="g3tMArv3LL3cOre">
+=======
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="g3tMArv3LL3cOre">
+>>>>>>> 8c02697de2afbf901a1dc48687c844693b3820d1
       <Current>1</Current>
       <Collation>latin1_swedish_ci</Collation>
     </schema>
@@ -50,6 +56,7 @@
     <schema id="15" parent="1" name="sql_injection">
       <Collation>latin1_swedish_ci</Collation>
     </schema>
+<<<<<<< HEAD
     <schema id="16" parent="1" name="sys">
       <Collation>utf8_general_ci</Collation>
     </schema>
@@ -1216,9 +1223,43 @@ SELECT|sys.sys_config
     </column>
     <index id="340" parent="257" name="sys_form_uri">
       <ColNames>sys_form_uri</ColNames>
+=======
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="sys"/>
+    <schema id="7" parent="1" name="classicmodels"/>
+    <schema id="8" parent="1" name="demo"/>
+    <schema id="9" parent="1" name="email_admin_app"/>
+    <schema id="10" parent="1" name="employees"/>
+    <schema id="11" parent="1" name="getVrom"/>
+    <schema id="12" parent="1" name="hb_student_tracker"/>
+    <schema id="13" parent="1" name="hibernateTest2"/>
+    <schema id="14" parent="1" name="web_student_tracker"/>
+    <table id="15" parent="2" name="k3yWOrdz"/>
+    <column id="16" parent="15" name="reg_Id">
+      <Position>1</Position>
+      <DataType>int(11) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="17" parent="15" name="keywords_Type">
+      <Position>2</Position>
+      <DataType>enum(&apos;corePages&apos;, &apos;cPanPages&apos;)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="18" parent="15" name="page_Keywords">
+      <Position>3</Position>
+      <DataType>mediumtext|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="19" parent="15" name="reg_Id">
+      <ColNames>reg_Id</ColNames>
+>>>>>>> 8c02697de2afbf901a1dc48687c844693b3820d1
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
+<<<<<<< HEAD
     <key id="341" parent="257" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
@@ -1283,6 +1324,16 @@ SELECT|sys.sys_config
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
+=======
+    <key id="20" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>reg_Id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="21" parent="15" name="reg_Id">
+      <ColNames>reg_Id</ColNames>
+      <UnderlyingIndexName>reg_Id</UnderlyingIndexName>
+>>>>>>> 8c02697de2afbf901a1dc48687c844693b3820d1
     </key>
   </database-model>
 </dataSource>
