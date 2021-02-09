@@ -1,4 +1,4 @@
-CREATE TABLE `su6scri63` (
+CREATE TABLE IF NOT EXISTS `su6scri63` (
   `id` int(15) DEFAULT NULL,
   `memId` int(15) DEFAULT NULL,
   `memName` varchar(100) DEFAULT NULL,

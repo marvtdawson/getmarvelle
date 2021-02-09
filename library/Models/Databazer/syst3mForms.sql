@@ -1,4 +1,4 @@
-CREATE TABLE `syst3mForms` (
+CREATE TABLE IF NOT EXISTS `syst3mForms` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `sys_form_number` varchar(50) NOT NULL,
   `sys_form_name` varchar(50) NOT NULL,

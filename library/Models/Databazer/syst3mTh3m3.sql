@@ -1,4 +1,4 @@
-CREATE TABLE `syst3mTh3m3` (
+CREATE TABLE IF NOT EXISTS `syst3mTh3m3` (
   `id` int(11) DEFAULT '11',
   `currentlayoutColor` varchar(50) DEFAULT NULL,
   `newlayoutColor` varchar(50) DEFAULT NULL,

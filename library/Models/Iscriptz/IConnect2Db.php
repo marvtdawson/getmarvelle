@@ -14,9 +14,11 @@ interface IConnect2Db
      * comment out the production block for development
      */
     // PRODUCTION
-  /*  const CLIENTHOST = "107.180.44.139";
+  /*
+    const CLIENTHOST = "107.180.44.139";
     const CLIENTUSER = "megaMarvo";
-    const CLIENTPW = "Simply@New1972";*/
+    const CLIENTPW = "Simply@New1972";
+  */
 
     /**
      * comment out the development block before pushing to production

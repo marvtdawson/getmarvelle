@@ -1,4 +1,4 @@
-CREATE TABLE `r3gM3mb3rs` (
+CREATE TABLE IF NOT EXISTS `r3gM3mb3rs` (
   `regMem_Type` varchar(25) DEFAULT NULL,
   `regMem_Aname` varchar(50) NOT NULL,
   `regMem_Name` varchar(50) NOT NULL,

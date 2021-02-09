@@ -2,9 +2,29 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/app/config" isTestSource="false" packagePrefix="App/Config" />
-      <sourceFolder url="file://$MODULE_DIR$/library/Controller" isTestSource="false" packagePrefix="Library\Controller" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Models" isTestSource="false" packagePrefix="Library\Models\" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Filters" isTestSource="false" packagePrefix="Library\Filters\" />
+      <sourceFolder url="file://$MODULE_DIR$/appcms/views" isTestSource="false" packagePrefix="AppCMS\Views\" />
+      <sourceFolder url="file://$MODULE_DIR$/library" isTestSource="false" packagePrefix="Library\" />
+      <sourceFolder url="file://$MODULE_DIR$/library/View/Helper" isTestSource="false" packagePrefix="Library\View\Helper\" />
+      <sourceFolder url="file://$MODULE_DIR$/appcms" isTestSource="false" packagePrefix="AppCMS\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/controller" isTestSource="false" packagePrefix="App\Controller\" />
+      <sourceFolder url="file://$MODULE_DIR$/library/View" isTestSource="false" packagePrefix="Library\View\" />
+      <sourceFolder url="file://$MODULE_DIR$/appcms/config" isTestSource="false" packagePrefix="AppCMS\Config\" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Models/Proxy" isTestSource="false" packagePrefix="Library\Models\Proxy\" />
+      <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/config" isTestSource="false" packagePrefix="App\Config\" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Modules" isTestSource="false" packagePrefix="Library\Modules\" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Models/Iscriptz" isTestSource="false" packagePrefix="Library\Models\Iscriptz\" />
+      <sourceFolder url="file://$MODULE_DIR$/core" isTestSource="false" packagePrefix="Core\" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Controller" isTestSource="false" packagePrefix="Library\Controller\" />
+      <sourceFolder url="file://$MODULE_DIR$/appcms/controller" isTestSource="false" packagePrefix="AppCMS\Controller\" />
+      <sourceFolder url="file://$MODULE_DIR$/library/CSRF" isTestSource="false" packagePrefix="Library\CSRF\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/views" isTestSource="false" packagePrefix="App\Views\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/views/core" isTestSource="false" packagePrefix="App\Views\Core\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/views/layout" isTestSource="false" packagePrefix="App\Views\Layout\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/myclabs/deep-copy" />
@@ -47,6 +67,7 @@
           <root url="phar://$MODULE_DIR$/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
           <root url="phar://$MODULE_DIR$/vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
         </CLASSES>
+        <JAVADOC />
         <SOURCES>
           <root url="phar://$MODULE_DIR$/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
           <root url="phar://$MODULE_DIR$/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
@@ -90,6 +111,7 @@
           <root url="file://$MODULE_DIR$/vendor/twig/twig" />
           <root url="file://$MODULE_DIR$/vendor/webmozart/assert" />
         </CLASSES>
+        <JAVADOC />
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/composer" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />

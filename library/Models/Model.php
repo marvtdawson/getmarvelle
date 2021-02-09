@@ -26,10 +26,10 @@ class Model implements IConnect2Db
     private function __construct(){
         // try to connect using a interface connection
         try{
-            $this->_pdo = new PDO('mysql:host=' . IConnect2Db::CLIENTHOST . ';dbname=' . IConnect2Db::CLIENTDB,
-                                                  IConnect2Db::CLIENTUSER,
-                                                  IConnect2Db::CLIENTPW);
-            $this->_pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+//            $this->_pdo = new PDO('mysql:host=' . IConnect2Db::CLIENTHOST . ';dbname=' . IConnect2Db::CLIENTDB,
+//                                                  IConnect2Db::CLIENTUSER,
+//                                                  IConnect2Db::CLIENTPW);
+//            $this->_pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
         catch(PDOException $e){
             die($e->getMessage());

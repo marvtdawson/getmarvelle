@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `admin_member_group` (
 -- Dumping data for table `groups`
 --
 
-INSERT INTO `groups` (`id`, `name`, `permissions`) VALUES
+INSERT INTO `admin_member_group` (`id`, `name`, `permissions`) VALUES
 (1, 'Standard_user', ''),
 (2, 'Administrator', '{"admin": 1}');
 

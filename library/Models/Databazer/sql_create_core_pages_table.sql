@@ -9,7 +9,7 @@
 -- Table structure for table `core_pages`
 --
 
-CREATE TABLE IF NOT EXISTS `core_pages` (
+CREATE TABLE IF NOT EXISTS `cor3Pag3s` (
   `corePages_Id` int(11) NOT NULL AUTO_INCREMENT,
   `corePages_N` int(4) NOT NULL,
   `corePages_U` varchar(100) NOT NULL,
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `core_pages` (
 -- Dumping data for table `core_pages`
 --
 
-INSERT INTO `core_pages` (`corePages_Id`, `corePages_N`, `corePages_U`, `corePages_SU`) VALUES
+INSERT INTO `cor3Pag3s` (`corePages_Id`, `corePages_N`, `corePages_U`, `corePages_SU`) VALUES
 (1, 1114, 'index.phtml', 'index'),
 (2, 1115, 'about.phtml', 'about'),
 (3, 1116, 'services.phtml', 'services'),
