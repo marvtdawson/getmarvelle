@@ -25,9 +25,9 @@ class Universal_Connect implements IConnect2Db
 
         if(self::$system_hookup)
         {
-            return 'System Did Hook Up';
+            echo 'System Did Hook Up';
         }
-        elseif(mysqli_connect_error(self::$system_hookup))
+        elseif(mysqli_connect_error())
         {
             echo 'System Did Not Hook Up: <br>' . mysqli_connect_error();
         }

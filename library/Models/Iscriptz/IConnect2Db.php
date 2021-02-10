@@ -22,7 +22,7 @@ interface IConnect2Db
      * comment out the development block before pushing to production
      */
     // DEVELOPMENT
-    const CLIENTHOST = "localhost";
+    const CLIENTHOST = "127.0.0.1";
     const CLIENTUSER = "root";
     const CLIENTPW = "TayTay@1972";
 
