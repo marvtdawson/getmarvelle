@@ -11,7 +11,7 @@ namespace appcms\controller;
 use core\Controller;
 use core\View;
 use Core\Config;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\SiteKeyWordsModel;
 
 
 class Radiostation extends Controller

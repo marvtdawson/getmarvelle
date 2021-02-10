@@ -15,10 +15,10 @@ use library\Form\Input;
 use Exception;
 use library\Gallery\GalleryAbstract;
 use library\User\User;
-use library\Models\Model;
+use Library\Models\Model;
 use PDOException;
 use Library\CSRF\CSRF;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\SiteKeyWordsModel;
 
 class Slideshow extends Controller
 {

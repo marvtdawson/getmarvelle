@@ -10,11 +10,11 @@ namespace AppCMS\Controller;
 use core\Config;
 use core\Controller;
 use core\View;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\SiteKeyWordsModel;
 use library\Form\Input;
 use Library\CSRF\CSRF;
 use PDOException;
-use library\Models\Model;
+use Library\Models\Model;
 
 class Gallery extends Controller
 {

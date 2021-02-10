@@ -23,8 +23,8 @@ use library\Controller\Redirect;
 //use PDOException;
 //use appcms\controller\Userprofile;
 //use PDO;
-use library\Models\CorePagesModel;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\CorePagesModel;
+use Library\Models\SiteKeyWordsModel;
 
 
 class Register extends Controller {

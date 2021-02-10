@@ -7,8 +7,8 @@
  */
 
 namespace core;
-use library\Models\SiteKeyWordsModel;
-use library\Models\CorePagesModel;
+use Library\Models\SiteKeyWordsModel;
+use Library\Models\CorePagesModel;
 
 abstract class Controller
 {

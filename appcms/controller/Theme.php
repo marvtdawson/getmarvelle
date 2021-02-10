@@ -13,11 +13,11 @@ use core\View;
 use library\Form\Input;
 use library\Theme\Sitetheme;
 use library\User\User;
-use library\Models\Model;
+use Library\Models\Model;
 use library\Form\Validation;
 use library\Controller\Redirect;
 use Exception;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\SiteKeyWordsModel;
 
 class Theme extends Controller
 {

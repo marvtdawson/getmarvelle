@@ -10,8 +10,8 @@ namespace App\Controller;
 use core\Config;
 use core\Controller;
 use core\View;
-use library\Models\CorePagesModel;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\CorePagesModel;
+use Library\Models\SiteKeyWordsModel;
 use appcms\controller\Userprofile;
 
 

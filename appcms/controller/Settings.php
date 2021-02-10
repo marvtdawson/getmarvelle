@@ -11,7 +11,7 @@ namespace AppCMS\Controller;
 use Core\Config;
 use core\Controller;
 use core\View;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\SiteKeyWordsModel;
 
 
 class Settings extends Controller

@@ -10,7 +10,7 @@ namespace AppCMS\Controller;
 use core\Config;
 use core\Controller;
 use core\View;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\SiteKeyWordsModel;
 
 class Video extends Controller
 {

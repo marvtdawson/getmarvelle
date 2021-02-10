@@ -14,8 +14,8 @@ use library\Form\Validation;
 use library\Form\Input;
 use library\CSRF\CSRF;
 use appcms\controller\Userprofile;
-use library\Models\CorePagesModel;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\CorePagesModel;
+use Library\Models\SiteKeyWordsModel;
 
 
 class Forgotpassword extends Controller

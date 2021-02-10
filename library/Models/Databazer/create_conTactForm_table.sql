@@ -1,4 +1,4 @@
-CREATE TABLE `conTactForm` (
+CREATE TABLE IF NOT EXISTS `conTactForm` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `contact_Name` varchar(50) NOT NULL,
   `contact_Email` varchar(50) NOT NULL,

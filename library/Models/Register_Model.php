@@ -7,7 +7,7 @@
  */
 
 namespace library\Models;
-use library\Models\Model;
+use Library\Models\Model;
 
 class Register_Model extends Model
 {

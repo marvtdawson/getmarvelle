@@ -15,10 +15,10 @@ use library\Form\Input;
 use library\CSRF\CSRF;
 use library\Controller\Redirect;
 use Exception;
-use library\Models\Subscribe_Model;
+use Library\Models\Subscribe_Model;
 use appcms\controller\Userprofile;
-use library\Models\CorePagesModel;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\CorePagesModel;
+use Library\Models\SiteKeyWordsModel;
 
 class Subscribe extends Controller
 {

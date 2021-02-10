@@ -13,7 +13,7 @@ use core\View;
 use library\User\User;
 use library\Sessions\Sessions;
 use library\Controller\Redirect;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\SiteKeyWordsModel;
 
 class Socialmedia extends Controller
 {

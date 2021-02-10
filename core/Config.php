@@ -15,10 +15,11 @@ class Config
 #################### SITE PROPERTIES ##########################
 
 const SITE_NAME = 'Get Marvelle';
+const SITE_NAME_CMS = 'getMarvelle CMS';
 const SITE_DOMAIN = 'www.getmarvelle.com';
 const SITE_LOGO = '/assets/images/Logo3.jpg';
 const APP_ROOT = __DIR__;
-const BASE_URL = 'http://localhost/projects/getmarvelle.dev'; // dev environment
+const BASE_URL = 'http://localhost/getmarvelle'; // dev environment
 const CORE_PAGES_KEYWORDS = 'corePages';
 const CPANEL_PAGES_KEYWORDS = 'cPanPages';
 

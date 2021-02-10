@@ -17,11 +17,11 @@ use library\CSRF\CSRF;
 use library\Sessions\Sessions;
 use library\User\User;
 use library\Controller\Redirect;
-use library\Models\Model;
+use Library\Models\Model;
 //use AppCMS\Controller\Permissions;
 use AppCMS\Controller\Userprofile;
-use library\Models\CorePagesModel;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\CorePagesModel;
+use Library\Models\SiteKeyWordsModel;
 
 class Login extends Controller {
 

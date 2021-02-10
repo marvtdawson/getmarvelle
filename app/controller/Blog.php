@@ -12,8 +12,8 @@ use core\Controller;
 use core\View;
 //use library\Sessions\Sessions;
 use appcms\controller\Userprofile;
-use library\Models\CorePagesModel;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\CorePagesModel;
+use Library\Models\SiteKeyWordsModel;
 
 class Blog extends Controller
 {

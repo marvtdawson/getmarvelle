@@ -85,7 +85,8 @@ class CorePagesModel extends Model
      * Find user data in table
      *
      */
-    public function find($pageInfoNumber = null){  // search for user provided info
+    public function find($pageInfoNumber = null): bool
+    {  // search for user provided info
         if($pageInfoNumber){ // if userInfo not equal to null, proceed
 
             // set field var to get either table id via potential member number

@@ -11,7 +11,7 @@ use core\Controller;
 use Core\Config;
 use library\User\User;
 use library\Controller\Redirect;
-use Exception; use core\View; use library\Models\SiteKeyWordsModel; use appcms\controller\Userprofile;
+use Exception; use core\View; use Library\Models\SiteKeyWordsModel; use appcms\controller\Userprofile;
 
 class Memberz extends Controller
 {

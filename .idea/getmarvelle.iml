@@ -2,6 +2,7 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+<<<<<<< HEAD
       <sourceFolder url="file://$MODULE_DIR$/app/config" isTestSource="false" packagePrefix="App\Config\" />
       <sourceFolder url="file://$MODULE_DIR$/library/Controller" isTestSource="false" packagePrefix="Library\Controller\" />
       <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" packagePrefix="App\" />
@@ -23,6 +24,29 @@
       <sourceFolder url="file://$MODULE_DIR$/library/Modules" isTestSource="false" packagePrefix="Library\Modules\" />
       <sourceFolder url="file://$MODULE_DIR$/library/View" isTestSource="false" packagePrefix="Library\View\" />
       <sourceFolder url="file://$MODULE_DIR$/library/View/Helper" isTestSource="false" packagePrefix="Library\View\Helper\" />
+=======
+      <sourceFolder url="file://$MODULE_DIR$/library/Models" isTestSource="false" packagePrefix="Library\Models\" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Filters" isTestSource="false" packagePrefix="Library\Filters\" />
+      <sourceFolder url="file://$MODULE_DIR$/appcms/views" isTestSource="false" packagePrefix="AppCMS\Views\" />
+      <sourceFolder url="file://$MODULE_DIR$/library" isTestSource="false" packagePrefix="Library\" />
+      <sourceFolder url="file://$MODULE_DIR$/library/View/Helper" isTestSource="false" packagePrefix="Library\View\Helper\" />
+      <sourceFolder url="file://$MODULE_DIR$/appcms" isTestSource="false" packagePrefix="AppCMS\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/controller" isTestSource="false" packagePrefix="App\Controller\" />
+      <sourceFolder url="file://$MODULE_DIR$/library/View" isTestSource="false" packagePrefix="Library\View\" />
+      <sourceFolder url="file://$MODULE_DIR$/appcms/config" isTestSource="false" packagePrefix="AppCMS\Config\" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Models/Proxy" isTestSource="false" packagePrefix="Library\Models\Proxy\" />
+      <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/config" isTestSource="false" packagePrefix="App\Config\" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Modules" isTestSource="false" packagePrefix="Library\Modules\" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Models/Iscriptz" isTestSource="false" packagePrefix="Library\Models\Iscriptz\" />
+      <sourceFolder url="file://$MODULE_DIR$/core" isTestSource="false" packagePrefix="Core\" />
+      <sourceFolder url="file://$MODULE_DIR$/library/Controller" isTestSource="false" packagePrefix="Library\Controller\" />
+      <sourceFolder url="file://$MODULE_DIR$/appcms/controller" isTestSource="false" packagePrefix="AppCMS\Controller\" />
+      <sourceFolder url="file://$MODULE_DIR$/library/CSRF" isTestSource="false" packagePrefix="Library\CSRF\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/views" isTestSource="false" packagePrefix="App\Views\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/views/core" isTestSource="false" packagePrefix="App\Views\Core\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/views/layout" isTestSource="false" packagePrefix="App\Views\Layout\" />
+>>>>>>> 793796f210c68196d44f7c33fcaea79da934cfb3
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />

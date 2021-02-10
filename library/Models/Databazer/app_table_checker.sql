@@ -29,7 +29,6 @@ else{
 
 $kony->close();
 
-
 include_once 'wl_iScripts/iKony_Admin.php';
 
 echo "hello";

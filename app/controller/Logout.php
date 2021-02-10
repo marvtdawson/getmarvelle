@@ -13,8 +13,8 @@ use core\View;
 use library\Sessions\Sessions;
 use library\Cookies\Cookies;
 use Core\Config;
-use library\Models\CorePagesModel;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\CorePagesModel;
+use Library\Models\SiteKeyWordsModel;
 
 class Logout extends Controller
 {

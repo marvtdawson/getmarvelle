@@ -11,7 +11,7 @@ namespace AppCMS\controller;
 use Core\Config;
 use core\View;
 use core\Controller;
-use library\Models\SiteKeyWordsModel;
+use Library\Models\SiteKeyWordsModel;
 
 
 class Virtualmanager extends Controller
