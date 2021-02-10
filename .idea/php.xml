@@ -36,18 +36,6 @@
       <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
     </include_path>
   </component>
-<<<<<<< HEAD
-  <component name="PhpProjectSharedConfiguration" php_language_level="7">
-    <option name="suggestChangeDefaultLanguageLevel" value="false" />
-  </component>
-=======
-<<<<<<< HEAD
-  <component name="PhpProjectSharedConfiguration" php_language_level="7">
-    <option name="suggestChangeDefaultLanguageLevel" value="false" />
-  </component>
-=======
->>>>>>> 8c02697de2afbf901a1dc48687c844693b3820d1
->>>>>>> 793796f210c68196d44f7c33fcaea79da934cfb3
   <component name="PhpUnit">
     <phpunit_settings>
       <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" />
